@@ -1,7 +1,4 @@
----------------------------------------------------------
-------  Town Tickets for Animal Crossing GameCube  ------
------------        Made by BrianMp16          -----------
----------------     October 9, 2023      ----------------
+Town Tickets for Animal Crossing GameCube - Made by BrianMp16
 ---------------------------------------------------------
 
 Please READ this document carefully before downloading and playing!
@@ -12,10 +9,13 @@ Please report any bugs/crashes to BrianMp16's Discord #animal-crossing (https://
 
 
 ---------------- Town Tickets Description ---------------
+
 Town Tickets is a program you use while playing Animal Crossing GameCube. Inspired by New Horizons, the goal is to complete tasks for tickets which can be exchanged for items that you can acquire in game through Animal Crossing's built in Nook Code system. This is a standalone program, not a mod!
 
 
+
 ---------------- How to use Town Tickets ----------------
+
 1) LOAD PROGRAM:	Ensure the program loads and no graphical errors are obvious (see above for requirements and troubleshooting) then read Tom Nook's dialog on the main screen.
 2) INPUT INFO:	On the main screen, click "My Town" then "Change Name" and input your player name, town name, and birthday to match what you have in your Animal Crossing game. Now select which tools you have, if you have island or e-reader access, and which of Nook's store you have. You may return here later to update this information as you play Animal Crossing!
 3) COMPLETE TASKS:	On the main screen, click "Go to Tasks." Hover your mouse over tasks to see what to do. While you play Animal Crossing, you may work on completing tasks. Left-click the task to increment it and right-click to decrement it (if you misclicked, for example). Once the task is complete, left-click it again to claim your tickets reward! Every day at midnight, a new set of 5 tasks will replace the current ones.
