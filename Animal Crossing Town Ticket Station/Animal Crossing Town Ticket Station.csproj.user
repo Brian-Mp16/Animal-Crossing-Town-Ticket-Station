@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\brian\source\repos\Animal Crossing Town Ticket Station\Animal Crossing Town Ticket Station\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Achievements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Catalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MyCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="MyTown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ShopAround.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Tasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
