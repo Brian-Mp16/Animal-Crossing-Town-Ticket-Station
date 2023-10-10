@@ -2345,7 +2345,7 @@ namespace Animal_Crossing_Town_Ticket_Station
             {
                 switch (intFilterListCatalog[0])
                 {
-                    case 0: break;
+                    case 0: lblFilterGroup.Text = ""; break;
                     case 1: lblFilterGroup.Text = "Group:  Everything"; break;
                     case 2: lblFilterGroup.Text = ""; break;
                     case 3: lblFilterGroup.Text = ""; break;
@@ -2366,7 +2366,7 @@ namespace Animal_Crossing_Town_Ticket_Station
             {
                 switch (intFilterListCatalog[0])
                 {
-                    case 0: break;
+                    case 0: lblFilterGroup.Text = ""; break;
                     case 1: lblFilterGroup.Text = "Group:  Nook"; break;
                     case 2: lblFilterGroup.Text = ""; break;
                     case 3: lblFilterGroup.Text = ""; break;
@@ -2387,7 +2387,7 @@ namespace Animal_Crossing_Town_Ticket_Station
             {
                 switch (intFilterListCatalog[0])
                 {
-                    case 0: break;
+                    case 0: lblFilterGroup.Text = "Group:  Everything"; break;
                     case 1: lblFilterGroup.Text = "Group:  Redd"; break;
                     case 2: lblFilterGroup.Text = "Group:  Everything"; break;
                     case 3: lblFilterGroup.Text = "Group:  Everything"; break;
@@ -2408,7 +2408,7 @@ namespace Animal_Crossing_Town_Ticket_Station
             {
                 switch (intFilterListCatalog[0])
                 {
-                    case 0: break;
+                    case 0: lblFilterGroup.Text = "Group:  Nook"; break;
                     case 1: lblFilterGroup.Text = "Group:  Raffle"; break;
                     case 2: lblFilterGroup.Text = "Group:  Nook"; break;
                     case 3: lblFilterGroup.Text = "Group:  Nook"; break;
@@ -2429,7 +2429,7 @@ namespace Animal_Crossing_Town_Ticket_Station
             {
                 switch (intFilterListCatalog[0])
                 {
-                    case 0: break;
+                    case 0: lblFilterGroup.Text = "Group:  Seasonal"; break;
                     case 1: lblFilterGroup.Text = "Group:  Seasonal"; break;
                     case 2: lblFilterGroup.Text = "Group:  Saharah"; break;
                     case 3: lblFilterGroup.Text = "Group:  Wendell"; break;
@@ -2450,7 +2450,7 @@ namespace Animal_Crossing_Town_Ticket_Station
             {
                 switch (intFilterListCatalog[0])
                 {
-                    case 0: break;
+                    case 0: lblFilterGroup.Text = "Group:  Other"; break;
                     case 1: lblFilterGroup.Text = "Group:  Other"; break;
                     case 2: lblFilterGroup.Text = "Group:  Seasonal"; break;
                     case 3: lblFilterGroup.Text = "Group:  Seasonal"; break;

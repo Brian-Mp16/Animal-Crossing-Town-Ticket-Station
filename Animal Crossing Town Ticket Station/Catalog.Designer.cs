@@ -848,9 +848,9 @@
             lblCodeYours.Location = new Point(660, 741);
             lblCodeYours.MinimumSize = new Size(280, 31);
             lblCodeYours.Name = "lblCodeYours";
-            lblCodeYours.Size = new Size(280, 74);
+            lblCodeYours.Size = new Size(280, 37);
             lblCodeYours.TabIndex = 152;
-            lblCodeYours.Text = "UTKJJn3k5L7SUE\r\nYFwRDOVEYH5rKW";
+            lblCodeYours.UseMnemonic = false;
             lblCodeYours.Visible = false;
             // 
             // chkCodeFast
@@ -874,9 +874,9 @@
             lblCodeFast.Location = new Point(660, 842);
             lblCodeFast.MinimumSize = new Size(280, 31);
             lblCodeFast.Name = "lblCodeFast";
-            lblCodeFast.Size = new Size(280, 74);
+            lblCodeFast.Size = new Size(280, 37);
             lblCodeFast.TabIndex = 154;
-            lblCodeFast.Text = "UTKJJn3k5L7SUE\r\nYFwRDOVEYH5rKW";
+            lblCodeFast.UseMnemonic = false;
             lblCodeFast.Visible = false;
             // 
             // lblCodeDescription

@@ -587,7 +587,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                     case "SummerCamper": if (TaskCheckTimeCamper(now) == false) { boolTaskChange = true; } break;
                     case "Fish5": case "Trash": if (hasRod == false) { boolTaskChange = true; } break;
                     case "Bug5": if (hasNet == false) { boolTaskChange = true; } break;
-                    case "HouseNES": if (boolHasNESGame == false) { boolTaskChange = true; } break;
+                    case "HouseNES": if (boolHasNESGame == false || intNookStore > 4) { boolTaskChange = true; } break;
                     case "HouseKKSong": if (intTasksComplete[109] < 1) { boolTaskChange = true; } break;
                     case "HouseGyroid2": case "TreePlant": case "VillagerPitfall": if (hasShovel == false) { boolTaskChange = true; } break;
                     case "VillagerRoof": if (intNookStore < 2 || intNookStore > 4) { boolTaskChange = true; } break;
@@ -967,7 +967,7 @@ namespace Animal_Crossing_Town_Ticket_Station
             int[] intTime = SettingsGetNookHours();
             if (now.Hour < intTime[0] && checkMorningHours == true && firstDay == false || now.Hour < intTime[0] - 1 && checkMorningHours == true && firstDay == true ||
                 now.Hour == intTime[0] - 1 && now.Minute < 44 && checkMorningHours == true && firstDay == true && hasShovel == false ||
-                now.Hour >= intTime[1] || now.Hour == intTime[1] - 1 && now.Minute > 55 && firstDay == false ||
+                now.Hour >= intTime[1] || now.Hour == intTime[1] - 1 && now.Minute > 55 ||
                 now.Hour == intTime[1] - 1 && now.Minute > 30 && firstDay == true && hasShovel == false)
                 return false;
             if (isRaffle == false & now.Day == DateTime.DaysInMonth(now.Year, now.Month))
@@ -1214,6 +1214,8 @@ namespace Animal_Crossing_Town_Ticket_Station
                         intTicketsCurrent -= intTaskRemovePrice;
                         intTasksDiscarded++;
                         lblTaskDescription.Text = "";
+                        intBugTaskIndex = 0;
+                        intFishTaskIndex = 0;
 
                         if (intTaskRemovePrice < 500)
                             intTaskRemovePrice += 50;
