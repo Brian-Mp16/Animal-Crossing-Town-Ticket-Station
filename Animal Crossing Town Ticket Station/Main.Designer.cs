@@ -65,7 +65,7 @@
             btnTasks.BackColor = Color.LemonChiffon;
             btnTasks.Cursor = Cursors.Hand;
             btnTasks.FlatAppearance.BorderSize = 0;
-            btnTasks.Font = new Font("FinkHeavy", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point);
+            btnTasks.Font = new Font("Arial", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point);
             btnTasks.ForeColor = Color.CornflowerBlue;
             btnTasks.Location = new Point(60, 271);
             btnTasks.Margin = new Padding(7, 8, 7, 8);
@@ -81,7 +81,7 @@
             btnBuy.BackColor = Color.LemonChiffon;
             btnBuy.Cursor = Cursors.Hand;
             btnBuy.FlatAppearance.BorderSize = 0;
-            btnBuy.Font = new Font("FinkHeavy", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point);
+            btnBuy.Font = new Font("Arial", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point);
             btnBuy.ForeColor = Color.CornflowerBlue;
             btnBuy.Location = new Point(426, 271);
             btnBuy.Margin = new Padding(7, 8, 7, 8);
@@ -97,7 +97,7 @@
             btnCodes.BackColor = Color.LemonChiffon;
             btnCodes.Cursor = Cursors.Hand;
             btnCodes.FlatAppearance.BorderSize = 0;
-            btnCodes.Font = new Font("FinkHeavy", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCodes.Font = new Font("Arial", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point);
             btnCodes.ForeColor = Color.CornflowerBlue;
             btnCodes.Location = new Point(792, 271);
             btnCodes.Margin = new Padding(7, 8, 7, 8);
@@ -113,7 +113,7 @@
             btnSettings.BackColor = Color.LemonChiffon;
             btnSettings.Cursor = Cursors.Hand;
             btnSettings.FlatAppearance.BorderSize = 0;
-            btnSettings.Font = new Font("FinkHeavy", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSettings.Font = new Font("Arial", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point);
             btnSettings.ForeColor = Color.CornflowerBlue;
             btnSettings.Location = new Point(1161, 271);
             btnSettings.Margin = new Padding(7, 8, 7, 8);
@@ -129,7 +129,7 @@
             btnAchievements.BackColor = Color.LemonChiffon;
             btnAchievements.Cursor = Cursors.Hand;
             btnAchievements.FlatAppearance.BorderSize = 0;
-            btnAchievements.Font = new Font("FinkHeavy", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point);
+            btnAchievements.Font = new Font("Arial", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point);
             btnAchievements.ForeColor = Color.CornflowerBlue;
             btnAchievements.Location = new Point(1531, 271);
             btnAchievements.Margin = new Padding(7, 8, 7, 8);
@@ -145,7 +145,7 @@
             btnExit.BackColor = Color.Transparent;
             btnExit.Cursor = Cursors.Hand;
             btnExit.FlatAppearance.BorderSize = 0;
-            btnExit.Font = new Font("FinkHeavy", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point);
+            btnExit.Font = new Font("Arial", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point);
             btnExit.ForeColor = Color.Orange;
             btnExit.Location = new Point(16, 990);
             btnExit.Margin = new Padding(7, 8, 7, 8);
@@ -324,7 +324,7 @@
             Controls.Add(btnBuy);
             Controls.Add(btnTasks);
             DoubleBuffered = true;
-            Font = new Font("FinkHeavy", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(7, 8, 7, 8);

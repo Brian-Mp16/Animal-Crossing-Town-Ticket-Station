@@ -117,7 +117,7 @@
             btnDialogSelectNo.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 255, 164);
             btnDialogSelectNo.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 255, 164);
             btnDialogSelectNo.FlatStyle = FlatStyle.Flat;
-            btnDialogSelectNo.Font = new Font("FinkHeavy", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnDialogSelectNo.Font = new Font("Arial", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnDialogSelectNo.ForeColor = Color.DarkOrange;
             btnDialogSelectNo.Location = new Point(657, 536);
             btnDialogSelectNo.MaximumSize = new Size(180, 60);
@@ -140,7 +140,7 @@
             btnDialogSelectYes.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 255, 164);
             btnDialogSelectYes.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 255, 164);
             btnDialogSelectYes.FlatStyle = FlatStyle.Flat;
-            btnDialogSelectYes.Font = new Font("FinkHeavy", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnDialogSelectYes.Font = new Font("Arial", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnDialogSelectYes.ForeColor = Color.DarkOrange;
             btnDialogSelectYes.Location = new Point(657, 476);
             btnDialogSelectYes.MaximumSize = new Size(180, 60);
@@ -171,7 +171,7 @@
             // 
             lblFengShui.AutoSize = true;
             lblFengShui.BackColor = Color.Transparent;
-            lblFengShui.Font = new Font("FinkHeavy", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFengShui.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             lblFengShui.ForeColor = Color.Black;
             lblFengShui.Location = new Point(2, 243);
             lblFengShui.MinimumSize = new Size(150, 31);
@@ -185,7 +185,7 @@
             // 
             lblDialogTimmy.AutoSize = true;
             lblDialogTimmy.BackColor = Color.Transparent;
-            lblDialogTimmy.Font = new Font("FinkHeavy", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDialogTimmy.Font = new Font("Arial", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblDialogTimmy.ForeColor = Color.FromArgb(24, 24, 24);
             lblDialogTimmy.Location = new Point(127, 367);
             lblDialogTimmy.MinimumSize = new Size(300, 31);
@@ -226,7 +226,7 @@
             // txtFilterSearch
             // 
             txtFilterSearch.BackColor = Color.PapayaWhip;
-            txtFilterSearch.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            txtFilterSearch.Font = new Font("Arial", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             txtFilterSearch.Location = new Point(835, 185);
             txtFilterSearch.MaximumSize = new Size(200, 34);
             txtFilterSearch.MinimumSize = new Size(200, 34);
@@ -350,7 +350,7 @@
             lstShop.BackColor = Color.FromArgb(193, 131, 106);
             lstShop.BorderStyle = BorderStyle.None;
             lstShop.Cursor = Cursors.Hand;
-            lstShop.Font = new Font("FinkHeavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lstShop.Font = new Font("Arial", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             lstShop.ForeColor = Color.FromArgb(32, 32, 32);
             lstShop.Location = new Point(950, 240);
             lstShop.MaximumSize = new Size(690, 700);
@@ -367,7 +367,7 @@
             // 
             lblSort.AutoSize = true;
             lblSort.BackColor = Color.Transparent;
-            lblSort.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSort.Font = new Font("Arial", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             lblSort.Location = new Point(1726, 917);
             lblSort.MinimumSize = new Size(160, 31);
             lblSort.Name = "lblSort";
@@ -380,7 +380,7 @@
             // 
             lblAvailability.AutoSize = true;
             lblAvailability.BackColor = Color.Transparent;
-            lblAvailability.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            lblAvailability.Font = new Font("Arial", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             lblAvailability.Location = new Point(1726, 532);
             lblAvailability.MinimumSize = new Size(160, 31);
             lblAvailability.Name = "lblAvailability";
@@ -393,7 +393,7 @@
             // 
             lblFilterGroup.AutoSize = true;
             lblFilterGroup.BackColor = Color.Transparent;
-            lblFilterGroup.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFilterGroup.Font = new Font("Arial", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             lblFilterGroup.Location = new Point(1163, 185);
             lblFilterGroup.MinimumSize = new Size(300, 31);
             lblFilterGroup.Name = "lblFilterGroup";
@@ -548,7 +548,7 @@
             // 
             lblFilterCheck.AutoSize = true;
             lblFilterCheck.BackColor = Color.Transparent;
-            lblFilterCheck.Font = new Font("FinkHeavy", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFilterCheck.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             lblFilterCheck.ForeColor = Color.Transparent;
             lblFilterCheck.Location = new Point(76, 48);
             lblFilterCheck.MinimumSize = new Size(850, 68);
@@ -738,7 +738,7 @@
             // 
             lblAvailabilityCheck.AutoSize = true;
             lblAvailabilityCheck.BackColor = Color.Transparent;
-            lblAvailabilityCheck.Font = new Font("FinkHeavy", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            lblAvailabilityCheck.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             lblAvailabilityCheck.ForeColor = Color.Transparent;
             lblAvailabilityCheck.Location = new Point(1770, 286);
             lblAvailabilityCheck.MinimumSize = new Size(68, 220);
@@ -751,7 +751,7 @@
             // 
             lblSortCheck.AutoSize = true;
             lblSortCheck.BackColor = Color.Transparent;
-            lblSortCheck.Font = new Font("FinkHeavy", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSortCheck.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             lblSortCheck.ForeColor = Color.Transparent;
             lblSortCheck.Location = new Point(1770, 675);
             lblSortCheck.MinimumSize = new Size(68, 220);
@@ -764,7 +764,7 @@
             // 
             lblTimesBought.AutoSize = true;
             lblTimesBought.BackColor = Color.Transparent;
-            lblTimesBought.Font = new Font("FinkHeavy", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTimesBought.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             lblTimesBought.ForeColor = Color.FromArgb(24, 24, 24);
             lblTimesBought.Location = new Point(1141, 1019);
             lblTimesBought.MinimumSize = new Size(300, 31);
@@ -778,7 +778,7 @@
             btnBack.BackColor = Color.Transparent;
             btnBack.Cursor = Cursors.Hand;
             btnBack.FlatAppearance.BorderSize = 0;
-            btnBack.Font = new Font("FinkHeavy", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            btnBack.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             btnBack.ForeColor = Color.Orange;
             btnBack.Location = new Point(23, 1008);
             btnBack.Margin = new Padding(7, 8, 7, 8);
@@ -793,7 +793,7 @@
             // 
             lblFilterCategory.AutoSize = true;
             lblFilterCategory.BackColor = Color.Transparent;
-            lblFilterCategory.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFilterCategory.Font = new Font("Arial", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             lblFilterCategory.Location = new Point(363, 185);
             lblFilterCategory.MinimumSize = new Size(300, 31);
             lblFilterCategory.Name = "lblFilterCategory";
@@ -805,7 +805,7 @@
             // 
             lblFengShuiColor.AutoSize = true;
             lblFengShuiColor.BackColor = Color.Transparent;
-            lblFengShuiColor.Font = new Font("FinkHeavy", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFengShuiColor.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             lblFengShuiColor.ForeColor = Color.Red;
             lblFengShuiColor.Location = new Point(153, 243);
             lblFengShuiColor.MinimumSize = new Size(120, 31);
@@ -817,7 +817,7 @@
             // 
             lblPickup.AutoSize = true;
             lblPickup.BackColor = Color.Transparent;
-            lblPickup.Font = new Font("FinkHeavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblPickup.Font = new Font("Arial", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblPickup.ForeColor = Color.LimeGreen;
             lblPickup.Location = new Point(1584, 90);
             lblPickup.MinimumSize = new Size(300, 31);
@@ -843,7 +843,7 @@
             // 
             lblCodeYours.AutoSize = true;
             lblCodeYours.BackColor = Color.Transparent;
-            lblCodeYours.Font = new Font("Consolas", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCodeYours.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             lblCodeYours.ForeColor = Color.Black;
             lblCodeYours.Location = new Point(660, 741);
             lblCodeYours.MinimumSize = new Size(280, 31);
@@ -857,7 +857,7 @@
             // 
             chkCodeFast.AutoSize = true;
             chkCodeFast.BackColor = Color.Transparent;
-            chkCodeFast.Font = new Font("FinkHeavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            chkCodeFast.Font = new Font("Arial", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             chkCodeFast.Location = new Point(1529, 20);
             chkCodeFast.Name = "chkCodeFast";
             chkCodeFast.Size = new Size(15, 14);
@@ -869,7 +869,7 @@
             // 
             lblCodeFast.AutoSize = true;
             lblCodeFast.BackColor = Color.Transparent;
-            lblCodeFast.Font = new Font("Consolas", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCodeFast.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             lblCodeFast.ForeColor = Color.Black;
             lblCodeFast.Location = new Point(660, 842);
             lblCodeFast.MinimumSize = new Size(280, 31);
@@ -883,7 +883,7 @@
             // 
             lblCodeDescription.AutoSize = true;
             lblCodeDescription.BackColor = Color.Transparent;
-            lblCodeDescription.Font = new Font("FinkHeavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCodeDescription.Font = new Font("Arial", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblCodeDescription.ForeColor = Color.Black;
             lblCodeDescription.Location = new Point(579, 741);
             lblCodeDescription.MinimumSize = new Size(60, 31);
@@ -898,7 +898,7 @@
             // 
             lblCodeFastCheckbox.AutoSize = true;
             lblCodeFastCheckbox.BackColor = Color.Transparent;
-            lblCodeFastCheckbox.Font = new Font("FinkHeavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCodeFastCheckbox.Font = new Font("Arial", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblCodeFastCheckbox.ForeColor = Color.Black;
             lblCodeFastCheckbox.Location = new Point(1582, 27);
             lblCodeFastCheckbox.MinimumSize = new Size(300, 31);

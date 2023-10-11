@@ -8,11 +8,13 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>UI_BrianMp16Logo.ico</ApplicationIcon>
+    <ApplicationDefaultFont>Arial, 18.0pt</ApplicationDefaultFont>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Resources\banned_words_list.txt" />
     <None Remove="Resources\FinkHeavy Regular.ttf" />
+    <None Remove="Resources\JetBrainsMono Regular.ttf" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +24,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\banned_words_list.txt" />
     <EmbeddedResource Include="Resources\FinkHeavy Regular.ttf" />
+    <EmbeddedResource Include="Resources\JetBrainsMono Regular.ttf" />
   </ItemGroup>
 
   <ItemGroup>

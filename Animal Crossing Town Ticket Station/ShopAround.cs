@@ -129,23 +129,30 @@ namespace Animal_Crossing_Town_Ticket_Station
             fontFink36 = new Font(fonts.Families[0], 36.0F);
             fontFink42 = new Font(fonts.Families[0], 42.0F);
 
+            txtTicketsExchange.Font = fontFink36;
+            btnTicketsSubtract.Font = fontFink36;
+            btnTicketsAdd.Font = fontFink36;
             btnBack.Font = fontFink24;
-            lstShop.Font = fontFink21;
-            lblDialogTimmy.Font = fontFink28;
-            lblDialogTommy.Font = fontFink21;
+            lblTickets.Font = fontFink42;
             lblFilterCategory.Font = fontFink18;
             lblFilterGroup.Font = fontFink18;
-            lblSort.Font = fontFink18;
             lblAvailability.Font = fontFink18;
-            lblTickets.Font = fontFink42;
-            btnTicketsPrice.Font = fontFink36;
+            lblSort.Font = fontFink18;
+            lstShop.Font = fontFink21;
+            lblTimesBought.Font = fontFink24;
+            lblDialogTimmy.Font = fontFink28;
+            lblDialogTommy.Font = fontFink21;
             lblFengShui.Font = fontFink24;
             lblFengShuiColor.Font = fontFink24;
-            lblTimesBought.Font = fontFink24;
+            btnCheat.Font = fontFink24;
+            lblFilterCheck.Font = fontFink24;
+            lblAvailabilityCheck.Font = fontFink24;
+            lblSortCheck.Font = fontFink24;
+            btnTicketsPrice.Font = fontFink36; // mismatched to Windows Form Builder, (28F)
             lblUnlock.Font = fontFink18;
             btnDialogSelectYes.Font = fontFink28;
             btnDialogSelectNo.Font = fontFink28;
-            txtFilterSearch.Font = fontFink18;
+            txtFilterSearch.Font = fontFink18;            
         }
 
         private void UpdateClock(object sender, EventArgs e)

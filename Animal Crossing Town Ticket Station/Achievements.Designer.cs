@@ -44,7 +44,7 @@
             btnBack.BackColor = Color.Transparent;
             btnBack.Cursor = Cursors.Hand;
             btnBack.FlatAppearance.BorderSize = 0;
-            btnBack.Font = new Font("FinkHeavy", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            btnBack.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             btnBack.ForeColor = Color.Orange;
             btnBack.Location = new Point(16, 990);
             btnBack.Margin = new Padding(7, 8, 7, 8);
@@ -69,7 +69,7 @@
             // 
             lstAchievements.BackColor = Color.FromArgb(193, 131, 106);
             lstAchievements.BorderStyle = BorderStyle.FixedSingle;
-            lstAchievements.Font = new Font("FinkHeavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lstAchievements.Font = new Font("Arial", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             lstAchievements.ForeColor = Color.FromArgb(32, 32, 32);
             lstAchievements.Location = new Point(908, 197);
             lstAchievements.MaximumSize = new Size(760, 820);
@@ -138,7 +138,7 @@
             // 
             lblFilters.AutoSize = true;
             lblFilters.BackColor = Color.FromArgb(193, 131, 106);
-            lblFilters.Font = new Font("FinkHeavy", 14.2499981F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFilters.Font = new Font("Arial", 14.2499981F, FontStyle.Regular, GraphicsUnit.Point);
             lblFilters.Location = new Point(559, 470);
             lblFilters.MaximumSize = new Size(300, 62);
             lblFilters.MinimumSize = new Size(300, 62);

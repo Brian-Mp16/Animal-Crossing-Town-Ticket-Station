@@ -115,7 +115,7 @@
             // 
             txtTicketsExchange.BackColor = Color.LemonChiffon;
             txtTicketsExchange.BorderStyle = BorderStyle.None;
-            txtTicketsExchange.Font = new Font("FinkHeavy", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point);
+            txtTicketsExchange.Font = new Font("Arial", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point);
             txtTicketsExchange.Location = new Point(802, 1013);
             txtTicketsExchange.MinimumSize = new Size(219, 63);
             txtTicketsExchange.Name = "txtTicketsExchange";
@@ -125,7 +125,7 @@
             // 
             // btnTicketsSubtract
             // 
-            btnTicketsSubtract.Font = new Font("FinkHeavy", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point);
+            btnTicketsSubtract.Font = new Font("Arial", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point);
             btnTicketsSubtract.Location = new Point(1582, 1013);
             btnTicketsSubtract.Name = "btnTicketsSubtract";
             btnTicketsSubtract.Size = new Size(108, 66);
@@ -137,7 +137,7 @@
             // 
             // btnTicketsAdd
             // 
-            btnTicketsAdd.Font = new Font("FinkHeavy", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point);
+            btnTicketsAdd.Font = new Font("Arial", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point);
             btnTicketsAdd.Location = new Point(1458, 1014);
             btnTicketsAdd.Name = "btnTicketsAdd";
             btnTicketsAdd.Size = new Size(118, 64);
@@ -152,7 +152,7 @@
             btnBack.BackColor = Color.Transparent;
             btnBack.Cursor = Cursors.Hand;
             btnBack.FlatAppearance.BorderSize = 0;
-            btnBack.Font = new Font("FinkHeavy", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            btnBack.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             btnBack.ForeColor = Color.Orange;
             btnBack.Location = new Point(23, 1008);
             btnBack.Margin = new Padding(7, 8, 7, 8);
@@ -193,7 +193,7 @@
             // 
             lblTickets.AutoSize = true;
             lblTickets.BackColor = Color.Transparent;
-            lblTickets.Font = new Font("FinkHeavy", 42F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTickets.Font = new Font("Arial", 42F, FontStyle.Regular, GraphicsUnit.Point);
             lblTickets.ForeColor = SystemColors.Control;
             lblTickets.Location = new Point(1555, 108);
             lblTickets.MinimumSize = new Size(325, 83);
@@ -208,7 +208,7 @@
             // 
             lblFilterCategory.AutoSize = true;
             lblFilterCategory.BackColor = Color.Transparent;
-            lblFilterCategory.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFilterCategory.Font = new Font("Arial", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             lblFilterCategory.Location = new Point(363, 185);
             lblFilterCategory.MinimumSize = new Size(300, 31);
             lblFilterCategory.Name = "lblFilterCategory";
@@ -220,7 +220,7 @@
             // 
             lblFilterGroup.AutoSize = true;
             lblFilterGroup.BackColor = Color.Transparent;
-            lblFilterGroup.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFilterGroup.Font = new Font("Arial", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             lblFilterGroup.Location = new Point(1163, 185);
             lblFilterGroup.MinimumSize = new Size(300, 31);
             lblFilterGroup.Name = "lblFilterGroup";
@@ -232,7 +232,7 @@
             // 
             lblAvailability.AutoSize = true;
             lblAvailability.BackColor = Color.Transparent;
-            lblAvailability.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            lblAvailability.Font = new Font("Arial", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             lblAvailability.Location = new Point(1726, 531);
             lblAvailability.MinimumSize = new Size(160, 31);
             lblAvailability.Name = "lblAvailability";
@@ -245,7 +245,7 @@
             // 
             lblSort.AutoSize = true;
             lblSort.BackColor = Color.Transparent;
-            lblSort.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSort.Font = new Font("Arial", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             lblSort.Location = new Point(1726, 917);
             lblSort.MinimumSize = new Size(160, 31);
             lblSort.Name = "lblSort";
@@ -259,7 +259,7 @@
             lstShop.BackColor = Color.FromArgb(255, 215, 179);
             lstShop.BorderStyle = BorderStyle.None;
             lstShop.Cursor = Cursors.Hand;
-            lstShop.Font = new Font("FinkHeavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lstShop.Font = new Font("Arial", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             lstShop.ForeColor = Color.FromArgb(32, 32, 32);
             lstShop.Location = new Point(950, 240);
             lstShop.MaximumSize = new Size(690, 700);
@@ -297,7 +297,7 @@
             // 
             lblTimesBought.AutoSize = true;
             lblTimesBought.BackColor = Color.Transparent;
-            lblTimesBought.Font = new Font("FinkHeavy", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTimesBought.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             lblTimesBought.ForeColor = Color.FromArgb(24, 24, 24);
             lblTimesBought.Location = new Point(1141, 1019);
             lblTimesBought.MinimumSize = new Size(300, 31);
@@ -321,7 +321,7 @@
             // 
             lblDialogTimmy.AutoSize = true;
             lblDialogTimmy.BackColor = Color.Transparent;
-            lblDialogTimmy.Font = new Font("FinkHeavy", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDialogTimmy.Font = new Font("Arial", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblDialogTimmy.ForeColor = Color.FromArgb(24, 24, 24);
             lblDialogTimmy.Location = new Point(120, 443);
             lblDialogTimmy.MinimumSize = new Size(300, 31);
@@ -334,7 +334,7 @@
             // 
             lblDialogTommy.AutoSize = true;
             lblDialogTommy.BackColor = Color.Transparent;
-            lblDialogTommy.Font = new Font("FinkHeavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDialogTommy.Font = new Font("Arial", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblDialogTommy.ForeColor = Color.MediumTurquoise;
             lblDialogTommy.Location = new Point(357, 547);
             lblDialogTommy.MinimumSize = new Size(300, 31);
@@ -347,7 +347,7 @@
             // 
             lblFengShui.AutoSize = true;
             lblFengShui.BackColor = Color.Transparent;
-            lblFengShui.Font = new Font("FinkHeavy", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFengShui.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             lblFengShui.ForeColor = Color.Black;
             lblFengShui.Location = new Point(2, 329);
             lblFengShui.MinimumSize = new Size(150, 31);
@@ -361,7 +361,7 @@
             // 
             lblFengShuiColor.AutoSize = true;
             lblFengShuiColor.BackColor = Color.Transparent;
-            lblFengShuiColor.Font = new Font("FinkHeavy", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFengShuiColor.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             lblFengShuiColor.ForeColor = Color.Red;
             lblFengShuiColor.Location = new Point(153, 329);
             lblFengShuiColor.MinimumSize = new Size(120, 31);
@@ -374,7 +374,7 @@
             btnCheat.BackColor = Color.Transparent;
             btnCheat.Cursor = Cursors.Hand;
             btnCheat.FlatAppearance.BorderSize = 0;
-            btnCheat.Font = new Font("FinkHeavy", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCheat.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             btnCheat.ForeColor = Color.Orange;
             btnCheat.Location = new Point(222, 1008);
             btnCheat.Margin = new Padding(7, 8, 7, 8);
@@ -595,7 +595,7 @@
             // 
             lblFilterCheck.AutoSize = true;
             lblFilterCheck.BackColor = Color.Transparent;
-            lblFilterCheck.Font = new Font("FinkHeavy", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFilterCheck.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             lblFilterCheck.ForeColor = Color.Transparent;
             lblFilterCheck.Location = new Point(76, 48);
             lblFilterCheck.MinimumSize = new Size(850, 68);
@@ -686,7 +686,7 @@
             // 
             lblAvailabilityCheck.AutoSize = true;
             lblAvailabilityCheck.BackColor = Color.Transparent;
-            lblAvailabilityCheck.Font = new Font("FinkHeavy", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            lblAvailabilityCheck.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             lblAvailabilityCheck.ForeColor = Color.Transparent;
             lblAvailabilityCheck.Location = new Point(1770, 286);
             lblAvailabilityCheck.MinimumSize = new Size(68, 220);
@@ -699,7 +699,7 @@
             // 
             lblSortCheck.AutoSize = true;
             lblSortCheck.BackColor = Color.Transparent;
-            lblSortCheck.Font = new Font("FinkHeavy", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSortCheck.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             lblSortCheck.ForeColor = Color.Transparent;
             lblSortCheck.Location = new Point(1770, 675);
             lblSortCheck.MinimumSize = new Size(68, 220);
@@ -715,7 +715,7 @@
             btnTicketsPrice.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnTicketsPrice.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnTicketsPrice.FlatStyle = FlatStyle.Flat;
-            btnTicketsPrice.Font = new Font("FinkHeavy", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnTicketsPrice.Font = new Font("Arial", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnTicketsPrice.ForeColor = SystemColors.Control;
             btnTicketsPrice.Image = Properties.Resources.UI_TownTicket_Price;
             btnTicketsPrice.ImageAlign = ContentAlignment.MiddleRight;
@@ -844,7 +844,7 @@
             // 
             lblUnlock.AutoSize = true;
             lblUnlock.BackColor = Color.Transparent;
-            lblUnlock.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            lblUnlock.Font = new Font("Arial", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             lblUnlock.Location = new Point(950, 951);
             lblUnlock.MinimumSize = new Size(690, 31);
             lblUnlock.Name = "lblUnlock";
@@ -872,7 +872,7 @@
             btnDialogSelectYes.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 255, 164);
             btnDialogSelectYes.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 255, 164);
             btnDialogSelectYes.FlatStyle = FlatStyle.Flat;
-            btnDialogSelectYes.Font = new Font("FinkHeavy", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnDialogSelectYes.Font = new Font("Arial", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnDialogSelectYes.ForeColor = Color.DarkOrange;
             btnDialogSelectYes.Location = new Point(656, 552);
             btnDialogSelectYes.MaximumSize = new Size(180, 60);
@@ -895,7 +895,7 @@
             btnDialogSelectNo.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 255, 164);
             btnDialogSelectNo.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 255, 164);
             btnDialogSelectNo.FlatStyle = FlatStyle.Flat;
-            btnDialogSelectNo.Font = new Font("FinkHeavy", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnDialogSelectNo.Font = new Font("Arial", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnDialogSelectNo.ForeColor = Color.DarkOrange;
             btnDialogSelectNo.Location = new Point(656, 612);
             btnDialogSelectNo.MaximumSize = new Size(180, 60);
@@ -935,7 +935,7 @@
             // txtFilterSearch
             // 
             txtFilterSearch.BackColor = Color.PapayaWhip;
-            txtFilterSearch.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            txtFilterSearch.Font = new Font("Arial", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             txtFilterSearch.Location = new Point(835, 184);
             txtFilterSearch.MaximumSize = new Size(200, 34);
             txtFilterSearch.MinimumSize = new Size(200, 34);

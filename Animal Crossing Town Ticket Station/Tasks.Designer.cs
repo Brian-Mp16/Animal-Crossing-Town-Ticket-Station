@@ -73,7 +73,7 @@
             btnBack.BackColor = Color.Transparent;
             btnBack.Cursor = Cursors.Hand;
             btnBack.FlatAppearance.BorderSize = 0;
-            btnBack.Font = new Font("FinkHeavy", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            btnBack.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             btnBack.ForeColor = Color.Orange;
             btnBack.Location = new Point(16, 990);
             btnBack.Margin = new Padding(7, 8, 7, 8);
@@ -198,7 +198,7 @@
             // 
             lblTaskDescription.AutoSize = true;
             lblTaskDescription.BackColor = Color.Transparent;
-            lblTaskDescription.Font = new Font("FinkHeavy", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTaskDescription.Font = new Font("Arial", 36F, FontStyle.Regular, GraphicsUnit.Point);
             lblTaskDescription.ForeColor = Color.FromArgb(0, 0, 192);
             lblTaskDescription.Location = new Point(415, 834);
             lblTaskDescription.MinimumSize = new Size(1120, 64);
@@ -211,7 +211,7 @@
             // 
             lblTask1.AutoSize = true;
             lblTask1.BackColor = Color.Transparent;
-            lblTask1.Font = new Font("FinkHeavy", 48F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTask1.Font = new Font("Arial", 48F, FontStyle.Regular, GraphicsUnit.Point);
             lblTask1.ForeColor = Color.FromArgb(48, 48, 48);
             lblTask1.Location = new Point(169, 322);
             lblTask1.MinimumSize = new Size(150, 85);
@@ -227,7 +227,7 @@
             // 
             lblTask2.AutoSize = true;
             lblTask2.BackColor = Color.Transparent;
-            lblTask2.Font = new Font("FinkHeavy", 48F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTask2.Font = new Font("Arial", 48F, FontStyle.Regular, GraphicsUnit.Point);
             lblTask2.ForeColor = Color.FromArgb(48, 48, 48);
             lblTask2.Location = new Point(533, 285);
             lblTask2.MinimumSize = new Size(150, 85);
@@ -243,7 +243,7 @@
             // 
             lblTask3.AutoSize = true;
             lblTask3.BackColor = Color.Transparent;
-            lblTask3.Font = new Font("FinkHeavy", 48F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTask3.Font = new Font("Arial", 48F, FontStyle.Regular, GraphicsUnit.Point);
             lblTask3.ForeColor = Color.FromArgb(48, 48, 48);
             lblTask3.Location = new Point(900, 273);
             lblTask3.MinimumSize = new Size(150, 85);
@@ -259,7 +259,7 @@
             // 
             lblTask4.AutoSize = true;
             lblTask4.BackColor = Color.Transparent;
-            lblTask4.Font = new Font("FinkHeavy", 48F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTask4.Font = new Font("Arial", 48F, FontStyle.Regular, GraphicsUnit.Point);
             lblTask4.ForeColor = Color.FromArgb(48, 48, 48);
             lblTask4.Location = new Point(1262, 286);
             lblTask4.MinimumSize = new Size(150, 85);
@@ -275,7 +275,7 @@
             // 
             lblTask5.AutoSize = true;
             lblTask5.BackColor = Color.Transparent;
-            lblTask5.Font = new Font("FinkHeavy", 48F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTask5.Font = new Font("Arial", 48F, FontStyle.Regular, GraphicsUnit.Point);
             lblTask5.ForeColor = Color.FromArgb(48, 48, 48);
             lblTask5.Location = new Point(1626, 322);
             lblTask5.MinimumSize = new Size(150, 85);
@@ -291,7 +291,7 @@
             // 
             lblTickets1.AutoSize = true;
             lblTickets1.BackColor = Color.Transparent;
-            lblTickets1.Font = new Font("FinkHeavy", 38F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTickets1.Font = new Font("Arial", 38F, FontStyle.Regular, GraphicsUnit.Point);
             lblTickets1.ForeColor = Color.FromArgb(204, 193, 177);
             lblTickets1.Location = new Point(208, 561);
             lblTickets1.MinimumSize = new Size(125, 66);
@@ -304,7 +304,7 @@
             // 
             lblTickets2.AutoSize = true;
             lblTickets2.BackColor = Color.Transparent;
-            lblTickets2.Font = new Font("FinkHeavy", 38F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTickets2.Font = new Font("Arial", 38F, FontStyle.Regular, GraphicsUnit.Point);
             lblTickets2.ForeColor = Color.FromArgb(204, 193, 177);
             lblTickets2.Location = new Point(569, 523);
             lblTickets2.MinimumSize = new Size(125, 66);
@@ -317,7 +317,7 @@
             // 
             lblTickets3.AutoSize = true;
             lblTickets3.BackColor = Color.Transparent;
-            lblTickets3.Font = new Font("FinkHeavy", 38F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTickets3.Font = new Font("Arial", 38F, FontStyle.Regular, GraphicsUnit.Point);
             lblTickets3.ForeColor = Color.FromArgb(204, 193, 177);
             lblTickets3.Location = new Point(919, 511);
             lblTickets3.MinimumSize = new Size(125, 66);
@@ -330,7 +330,7 @@
             // 
             lblTickets4.AutoSize = true;
             lblTickets4.BackColor = Color.Transparent;
-            lblTickets4.Font = new Font("FinkHeavy", 38F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTickets4.Font = new Font("Arial", 38F, FontStyle.Regular, GraphicsUnit.Point);
             lblTickets4.ForeColor = Color.FromArgb(204, 193, 177);
             lblTickets4.Location = new Point(1274, 523);
             lblTickets4.MinimumSize = new Size(125, 66);
@@ -343,7 +343,7 @@
             // 
             lblTickets5.AutoSize = true;
             lblTickets5.BackColor = Color.Transparent;
-            lblTickets5.Font = new Font("FinkHeavy", 38F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTickets5.Font = new Font("Arial", 38F, FontStyle.Regular, GraphicsUnit.Point);
             lblTickets5.ForeColor = Color.FromArgb(204, 193, 177);
             lblTickets5.Location = new Point(1627, 561);
             lblTickets5.MinimumSize = new Size(125, 66);
@@ -356,7 +356,7 @@
             // 
             lblTickets.AutoSize = true;
             lblTickets.BackColor = Color.Transparent;
-            lblTickets.Font = new Font("FinkHeavy", 42F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTickets.Font = new Font("Arial", 42F, FontStyle.Regular, GraphicsUnit.Point);
             lblTickets.ForeColor = SystemColors.Control;
             lblTickets.Location = new Point(1555, 108);
             lblTickets.MinimumSize = new Size(325, 83);
@@ -478,7 +478,7 @@
             Controls.Add(imgCL_day1);
             Controls.Add(btnBack);
             DoubleBuffered = true;
-            Font = new Font("FinkHeavy", 8.999999F, FontStyle.Regular, GraphicsUnit.Point);
+            Font = new Font("Arial", 8.999999F, FontStyle.Regular, GraphicsUnit.Point); //TODO: Should this be here? Does the window use this value?
             ForeColor = Color.Transparent;
             FormBorderStyle = FormBorderStyle.None;
             MaximumSize = new Size(1920, 1080);

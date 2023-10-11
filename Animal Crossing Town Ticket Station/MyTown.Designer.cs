@@ -87,7 +87,7 @@
             btnBack.BackColor = Color.Transparent;
             btnBack.Cursor = Cursors.Hand;
             btnBack.FlatAppearance.BorderSize = 0;
-            btnBack.Font = new Font("FinkHeavy", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            btnBack.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             btnBack.ForeColor = Color.Orange;
             btnBack.Location = new Point(16, 990);
             btnBack.Margin = new Padding(7, 8, 7, 8);
@@ -343,7 +343,7 @@
             // 
             calChangeTimeCalendar.BackColor = SystemColors.HotTrack;
             calChangeTimeCalendar.Cursor = Cursors.Hand;
-            calChangeTimeCalendar.Font = new Font("FinkHeavy", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            calChangeTimeCalendar.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             calChangeTimeCalendar.ForeColor = SystemColors.MenuText;
             calChangeTimeCalendar.Location = new Point(1120, 795);
             calChangeTimeCalendar.MaxDate = new DateTime(2030, 12, 31, 0, 0, 0, 0);
@@ -362,7 +362,7 @@
             btnChangeTime.BackColor = Color.FromArgb(224, 224, 224);
             btnChangeTime.Cursor = Cursors.Hand;
             btnChangeTime.FlatAppearance.BorderSize = 0;
-            btnChangeTime.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            btnChangeTime.Font = new Font("Arial", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             btnChangeTime.ForeColor = Color.Black;
             btnChangeTime.Location = new Point(1530, 1027);
             btnChangeTime.Margin = new Padding(7, 8, 7, 8);
@@ -378,7 +378,7 @@
             // 
             lblChangeTime.AutoSize = true;
             lblChangeTime.BackColor = Color.Transparent;
-            lblChangeTime.Font = new Font("FinkHeavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblChangeTime.Font = new Font("Arial", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblChangeTime.ForeColor = Color.Black;
             lblChangeTime.Location = new Point(1090, 757);
             lblChangeTime.Margin = new Padding(4, 0, 4, 0);
@@ -393,7 +393,7 @@
             // cmbChangeTimeHour
             // 
             cmbChangeTimeHour.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbChangeTimeHour.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            cmbChangeTimeHour.Font = new Font("Arial", 18F, FontStyle.Regular, GraphicsUnit.Point);
             cmbChangeTimeHour.FormattingEnabled = true;
             cmbChangeTimeHour.Items.AddRange(new object[] { "12 am", "1 am", "2 am", "3 am", "4 am", "5 am", "6 am", "7 am", "8 am", "9 am", "10 am", "11 am", "12 pm", "1 pm", "2 pm", "3 pm", "4 pm", "5 pm", "6 pm", "7 pm", "8 pm", "9 pm", "10 pm", "11 pm" });
             cmbChangeTimeHour.Location = new Point(1120, 977);
@@ -406,7 +406,7 @@
             // cmbChangeTimeMinute
             // 
             cmbChangeTimeMinute.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbChangeTimeMinute.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            cmbChangeTimeMinute.Font = new Font("Arial", 18F, FontStyle.Regular, GraphicsUnit.Point);
             cmbChangeTimeMinute.FormattingEnabled = true;
             cmbChangeTimeMinute.Items.AddRange(new object[] { "00 min", "01 min", "02 min", "03 min", "04 min", "05 min", "06 min", "07 min", "08 min", "09 min", "10 min", "11 min", "12 min", "13 min", "14 min", "15 min", "16 min", "17 min", "18 min", "19 min", "20 min", "21 min", "22 min", "23 min", "24 min", "25 min", "26 min", "27 min", "28 min", "29 min", "30 min", "31 min", "32 min", "33 min", "34 min", "35 min", "36 min", "37 min", "38 min", "39 min", "40 min", "41 min", "42 min", "43 min", "44 min", "45 min", "46 min", "47 min", "48 min", "49 min", "50 min", "51 min", "52 min", "53 min", "54 min", "55 min", "56 min", "57 min", "58 min", "59 min" });
             cmbChangeTimeMinute.Location = new Point(1241, 977);
@@ -421,7 +421,7 @@
             btnChangeTimeAccept.BackColor = Color.FromArgb(224, 224, 224);
             btnChangeTimeAccept.Cursor = Cursors.Hand;
             btnChangeTimeAccept.FlatAppearance.BorderSize = 0;
-            btnChangeTimeAccept.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            btnChangeTimeAccept.Font = new Font("Arial", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             btnChangeTimeAccept.ForeColor = Color.FromArgb(0, 192, 0);
             btnChangeTimeAccept.Location = new Point(1120, 1027);
             btnChangeTimeAccept.Margin = new Padding(7, 8, 7, 8);
@@ -439,7 +439,7 @@
             btnChangeTimeCancel.BackColor = Color.FromArgb(224, 224, 224);
             btnChangeTimeCancel.Cursor = Cursors.Hand;
             btnChangeTimeCancel.FlatAppearance.BorderSize = 0;
-            btnChangeTimeCancel.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            btnChangeTimeCancel.Font = new Font("Arial", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             btnChangeTimeCancel.ForeColor = Color.Red;
             btnChangeTimeCancel.Location = new Point(1241, 1028);
             btnChangeTimeCancel.Margin = new Padding(7, 8, 7, 8);
@@ -457,7 +457,7 @@
             btnChangeTimeActual.BackColor = Color.FromArgb(224, 224, 224);
             btnChangeTimeActual.Cursor = Cursors.Hand;
             btnChangeTimeActual.FlatAppearance.BorderSize = 0;
-            btnChangeTimeActual.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            btnChangeTimeActual.Font = new Font("Arial", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             btnChangeTimeActual.ForeColor = Color.Black;
             btnChangeTimeActual.Location = new Point(1152, 707);
             btnChangeTimeActual.Margin = new Padding(7, 8, 7, 8);
@@ -472,7 +472,7 @@
             // 
             // btnEraseData
             // 
-            btnEraseData.Font = new Font("FinkHeavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnEraseData.Font = new Font("Arial", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnEraseData.ForeColor = Color.Red;
             btnEraseData.Location = new Point(12, 12);
             btnEraseData.Margin = new Padding(4, 3, 4, 3);
@@ -489,7 +489,7 @@
             btnChangeName.BackColor = Color.FromArgb(224, 224, 224);
             btnChangeName.Cursor = Cursors.Hand;
             btnChangeName.FlatAppearance.BorderSize = 0;
-            btnChangeName.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            btnChangeName.Font = new Font("Arial", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             btnChangeName.ForeColor = Color.Black;
             btnChangeName.Location = new Point(1530, 981);
             btnChangeName.Margin = new Padding(7, 8, 7, 8);
@@ -504,7 +504,7 @@
             // txtPlayerName
             // 
             txtPlayerName.BackColor = Color.PapayaWhip;
-            txtPlayerName.Font = new Font("Consolas", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPlayerName.Font = new Font("Arial", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             txtPlayerName.Location = new Point(1090, 536);
             txtPlayerName.Margin = new Padding(4, 3, 4, 3);
             txtPlayerName.Name = "txtPlayerName";
@@ -516,7 +516,7 @@
             // txtTownName
             // 
             txtTownName.BackColor = SystemColors.Info;
-            txtTownName.Font = new Font("Consolas", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtTownName.Font = new Font("Arial", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             txtTownName.Location = new Point(1090, 622);
             txtTownName.Margin = new Padding(4, 3, 4, 3);
             txtTownName.Name = "txtTownName";
@@ -528,7 +528,7 @@
             // txtBirthday
             // 
             txtBirthday.BackColor = Color.Gainsboro;
-            txtBirthday.Font = new Font("Consolas", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtBirthday.Font = new Font("Arial", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             txtBirthday.Location = new Point(1090, 709);
             txtBirthday.Margin = new Padding(4, 3, 4, 3);
             txtBirthday.Name = "txtBirthday";
@@ -541,7 +541,7 @@
             // txtSymbols
             // 
             txtSymbols.BackColor = SystemColors.Info;
-            txtSymbols.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtSymbols.Font = new Font("Arial", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             txtSymbols.Location = new Point(1390, 12);
             txtSymbols.Name = "txtSymbols";
             txtSymbols.ReadOnly = true;
@@ -554,7 +554,7 @@
             // 
             lblPlayerName.AutoSize = true;
             lblPlayerName.BackColor = Color.Transparent;
-            lblPlayerName.Font = new Font("FinkHeavy", 20.25F, FontStyle.Underline, GraphicsUnit.Point);
+            lblPlayerName.Font = new Font("Arial", 20.25F, FontStyle.Underline, GraphicsUnit.Point);
             lblPlayerName.ForeColor = Color.Gold;
             lblPlayerName.Location = new Point(1090, 502);
             lblPlayerName.Margin = new Padding(4, 0, 4, 0);
@@ -570,7 +570,7 @@
             // 
             lblTownName.AutoSize = true;
             lblTownName.BackColor = Color.Transparent;
-            lblTownName.Font = new Font("FinkHeavy", 20.25F, FontStyle.Underline, GraphicsUnit.Point);
+            lblTownName.Font = new Font("Arial", 20.25F, FontStyle.Underline, GraphicsUnit.Point);
             lblTownName.ForeColor = Color.Gold;
             lblTownName.Location = new Point(1090, 588);
             lblTownName.Margin = new Padding(4, 0, 4, 0);
@@ -585,7 +585,7 @@
             // 
             lblBirthday.AutoSize = true;
             lblBirthday.BackColor = Color.Transparent;
-            lblBirthday.Font = new Font("FinkHeavy", 20.25F, FontStyle.Underline, GraphicsUnit.Point);
+            lblBirthday.Font = new Font("Arial", 20.25F, FontStyle.Underline, GraphicsUnit.Point);
             lblBirthday.ForeColor = Color.Gold;
             lblBirthday.Location = new Point(1090, 674);
             lblBirthday.Margin = new Padding(4, 0, 4, 0);
@@ -600,7 +600,7 @@
             // 
             lblSymbolHelp.AutoSize = true;
             lblSymbolHelp.BackColor = Color.Transparent;
-            lblSymbolHelp.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSymbolHelp.Font = new Font("Arial", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             lblSymbolHelp.ForeColor = Color.Black;
             lblSymbolHelp.Location = new Point(1067, 175);
             lblSymbolHelp.Margin = new Padding(4, 0, 4, 0);
@@ -616,7 +616,7 @@
             // 
             chkBrianMp16.AutoSize = true;
             chkBrianMp16.BackColor = Color.Transparent;
-            chkBrianMp16.Font = new Font("Consolas", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            chkBrianMp16.Font = new Font("Arial", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             chkBrianMp16.Location = new Point(183, 19);
             chkBrianMp16.Name = "chkBrianMp16";
             chkBrianMp16.Size = new Size(173, 52);

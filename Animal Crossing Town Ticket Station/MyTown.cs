@@ -19,6 +19,10 @@ namespace Animal_Crossing_Town_Ticket_Station
         private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont,
             IntPtr pdv, [System.Runtime.InteropServices.In] ref uint pcFonts);
         private PrivateFontCollection fonts = new PrivateFontCollection();
+        Font? fontConsolas15;
+        Font? fontConsolas16;
+        Font? fontConsolas21;
+        Font? fontFink12;
         Font? fontFink18;
         Font? fontFink20;
         Font? fontFink21;
@@ -73,26 +77,43 @@ namespace Animal_Crossing_Town_Ticket_Station
             AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.FinkHeavy_Regular.Length, IntPtr.Zero, ref dummy);
             System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr);
 
+            byte[] fontData1 = Properties.Resources.JetBrainsMono_Regular;
+            IntPtr fontPtr1 = System.Runtime.InteropServices.Marshal.AllocCoTaskMem(fontData1.Length);
+            System.Runtime.InteropServices.Marshal.Copy(fontData1, 1, fontPtr1, fontData1.Length);
+            uint dummy1 = 0;
+            fonts.AddMemoryFont(fontPtr1, Properties.Resources.JetBrainsMono_Regular.Length);
+            AddFontMemResourceEx(fontPtr1, (uint)Properties.Resources.JetBrainsMono_Regular.Length, IntPtr.Zero, ref dummy1);
+            System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr1);
+
+            fontConsolas15 = new Font(fonts.Families[1], 14.25F);
+            fontConsolas16 = new Font(fonts.Families[1], 15.75F);
+            fontConsolas21 = new Font(fonts.Families[1], 20.25F);
+            fontFink12 = new Font(fonts.Families[0], 12.0F);
             fontFink18 = new Font(fonts.Families[0], 18.0F);
             fontFink21 = new Font(fonts.Families[0], 20.25F);
-            fontFink20 = new Font(fonts.Families[0], 20.25F, FontStyle.Underline);
+            fontFink20 = new Font(fonts.Families[0], 20.25F, FontStyle.Underline, GraphicsUnit.Point);
             fontFink24 = new Font(fonts.Families[0], 24.0F);
 
             btnBack.Font = fontFink24;
-            btnEraseData.Font = fontFink21;
+            calChangeTimeCalendar.Font = fontFink12;
             btnChangeTime.Font = fontFink18;
-            cmbChangeTimeHour.Font = fontFink18;
-            cmbChangeTimeMinute.Font = fontFink18;
-            btnChangeTimeAccept.Font = fontFink18;
-            btnChangeTimeActual.Font = fontFink18;
-            btnChangeTimeCancel.Font = fontFink18;
-            btnChangeName.Font = fontFink18;
-            //txtBirthday.Font = fontFink21;
             lblChangeTime.Font = fontFink21;
+            cmbChangeTimeHour.Font = fontFink18; // mismatched in Windows Form Builder, Segoe UI (18F)
+            cmbChangeTimeMinute.Font = fontFink18; // mismatched in Windows Form Builder, Segoe UI (18F)
+            btnChangeTimeAccept.Font = fontFink18;
+            btnChangeTimeCancel.Font = fontFink18;
+            btnChangeTimeActual.Font = fontFink18;
+            btnEraseData.Font = fontFink21;
+            btnChangeName.Font = fontFink18;
+            txtPlayerName.Font = fontConsolas21;
+            txtTownName.Font = fontConsolas21;
+            txtBirthday.Font = fontConsolas21;
+            txtSymbols.Font = fontConsolas15;
             lblPlayerName.Font = fontFink20;
             lblTownName.Font = fontFink20;
             lblBirthday.Font = fontFink20;
             lblSymbolHelp.Font = fontFink18;
+            chkBrianMp16.Font = fontConsolas16;
         }
 
         private void ChangeCheckboxes()

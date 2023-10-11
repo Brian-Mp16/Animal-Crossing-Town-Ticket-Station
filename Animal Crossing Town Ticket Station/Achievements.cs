@@ -23,6 +23,7 @@ namespace Animal_Crossing_Town_Ticket_Station
         Font? fontFink14;
         Font? fontFink21;
         Font? fontFink24;
+        Font? fontFink24Underlined;
         int intTasksDiscarded = 0;
         static int intTasksTotal = 300;
         int[] intTasksComplete = new int[intTasksTotal];
@@ -64,6 +65,7 @@ namespace Animal_Crossing_Town_Ticket_Station
             fontFink14 = new Font(fonts.Families[0], 14.0F);
             fontFink21 = new Font(fonts.Families[0], 21.0F);
             fontFink24 = new Font(fonts.Families[0], 24.0F);
+            fontFink24Underlined = new Font(fonts.Families[0], 24.0F, FontStyle.Underline, GraphicsUnit.Point);
 
             btnBack.Font = fontFink24;
             lstAchievements.Font = fontFink21;
@@ -257,7 +259,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                 intTimePlayedSeconds <= 0 && intFilterList == 2 || intTimePlayedDays <= 0 && intFilterList == 2 || intTasksCompleteTotal <= 0 && intFilterList == 2 ||
                 intTasksUnique <= 0 && intFilterList == 2 || intTicketsTotal <= 0 && intFilterList == 2 || intTicketsSpent <= 0 && intFilterList == 2 ||
                 intBoughtTotal <= 0 && intFilterList == 2 || intItemCodesUnique <= 0 && intFilterList == 2)
-                lstAchievements.Items.Add(" Totals:                                                       ").Font = new Font("FinkHeavy", 24, FontStyle.Underline);
+                lstAchievements.Items.Add(" Totals:                                                       ").Font = fontFink24Underlined;
             if (intFilterList == 0 || intTimePlayedSeconds > 0 && intFilterList == 1 || intTimePlayedSeconds <= 0 && intFilterList == 2)
                 if (t.Days < 366)
                     lstAchievements.Items.Add(" Total Time Played:", 0).SubItems.Add(string.Format("{0:D2}:{1:D2}:{2:D2} ", (t.Days * 24 + t.Hours).ToString("N0"), t.Minutes, t.Seconds));
@@ -295,7 +297,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                     hasUItemsBoughtAll = false;
             }
             if (intFilterList == 0 || intFilterList == 1 && hasUItemsBoughtNone == false || intFilterList == 2 && hasUItemsBoughtAll == false)
-                lstAchievements.Items.Add(" Item Codes Obtained:                               ").Font = new Font("FinkHeavy", 24, FontStyle.Underline);
+                lstAchievements.Items.Add(" Item Codes Obtained:                               ").Font = fontFink24Underlined;
             if (intFilterList == 0 || intBoughtUnique[0] > 0 && intFilterList == 1 || intBoughtUnique[0] <= 0 && intFilterList == 2)
                 lstAchievements.Items.Add(" Furniture Codes:", 283).SubItems.Add(intBoughtUnique[0].ToString("N0") + " ");
             if (intFilterList == 0 || intBoughtUnique[1] > 0 && intFilterList == 1 || intBoughtUnique[1] <= 0 && intFilterList == 2)
@@ -331,7 +333,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                     hasTasksCompletedAll = false;
             }
             if (intFilterList == 0 || intFilterList == 1 && hasTasksCompletedNone == false || intFilterList == 2 && hasTasksCompletedAll == false)
-                lstAchievements.Items.Add(" Individual Tasks Completed:                   ").Font = new Font("FinkHeavy", 24, FontStyle.Underline);
+                lstAchievements.Items.Add(" Individual Tasks Completed:                   ").Font = fontFink24Underlined;
             for (int i = 1; i < TaskData.GetTaskInfoArrayLength(); i++)
             {
                 if (TaskData.GetTaskCheckByIndex(i).Item1.Name == "Catch a X(Fish)")

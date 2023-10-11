@@ -66,12 +66,12 @@ namespace Animal_Crossing_Town_Ticket_Station
 
             fontFink36 = new Font(fonts.Families[0], 36.0F);
 
-            btnExit.Font = fontFink36;
             btnTasks.Font = fontFink36;
-            btnSettings.Font = fontFink36;
-            btnCodes.Font = fontFink36;
-            btnAchievements.Font = fontFink36;
             btnBuy.Font = fontFink36;
+            btnCodes.Font = fontFink36;
+            btnSettings.Font = fontFink36;
+            btnAchievements.Font = fontFink36;
+            btnExit.Font = fontFink36;
         }
 
         private void ChangeCheckboxes()

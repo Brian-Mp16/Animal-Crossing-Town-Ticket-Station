@@ -121,7 +121,8 @@ namespace Animal_Crossing_Town_Ticket_Station.Properties {
         ///beatoff
         ///beatyourmeat
         ///beeyotch
-        ///bellend        /// [rest of string was truncated]&quot;;.
+        ///bellend
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string banned_words_list {
             get {
@@ -1455,6 +1456,16 @@ namespace Animal_Crossing_Town_Ticket_Station.Properties {
         internal static byte[] FinkHeavy_Regular {
             get {
                 object obj = ResourceManager.GetObject("FinkHeavy_Regular", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] JetBrainsMono_Regular {
+            get {
+                object obj = ResourceManager.GetObject("JetBrainsMono_Regular", resourceCulture);
                 return ((byte[])(obj));
             }
         }

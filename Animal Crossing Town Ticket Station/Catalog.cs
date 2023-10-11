@@ -26,6 +26,7 @@ namespace Animal_Crossing_Town_Ticket_Station
         Font? fontFink21;
         Font? fontFink24;
         Font? fontFink28;
+        Font? fontConsolas24;
         DateTime loadTime;
         TimeSpan timeOffset = new TimeSpan(0, 0, 0, 0, 0);
         ImageList imgList = new ImageList();
@@ -86,28 +87,45 @@ namespace Animal_Crossing_Town_Ticket_Station
             AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.FinkHeavy_Regular.Length, IntPtr.Zero, ref dummy);
             System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr);
 
+            byte[] fontData1 = Properties.Resources.JetBrainsMono_Regular;
+            IntPtr fontPtr1 = System.Runtime.InteropServices.Marshal.AllocCoTaskMem(fontData1.Length);
+            System.Runtime.InteropServices.Marshal.Copy(fontData1, 1, fontPtr1, fontData1.Length);
+            uint dummy1 = 0;
+            fonts.AddMemoryFont(fontPtr1, Properties.Resources.JetBrainsMono_Regular.Length);
+            AddFontMemResourceEx(fontPtr1, (uint)Properties.Resources.JetBrainsMono_Regular.Length, IntPtr.Zero, ref dummy1);
+            System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr1);
+
             fontFink18 = new Font(fonts.Families[0], 18.0F);
             fontFink20 = new Font(fonts.Families[0], 20.25F);
             fontFink21 = new Font(fonts.Families[0], 21.0F);
             fontFink24 = new Font(fonts.Families[0], 24.0F);
             fontFink28 = new Font(fonts.Families[0], 27.75F);
+            fontConsolas24 = new Font(fonts.Families[1], 24.0F);
 
-            btnBack.Font = fontFink24;
-            lstShop.Font = fontFink21;
+            btnDialogSelectNo.Font = fontFink28;
+            btnDialogSelectYes.Font = fontFink28;
+            txtFilterSearch.Font = fontFink18;
+            lblFengShui.Font = fontFink24;
             lblDialogTimmy.Font = fontFink28;
-            lblFilterCategory.Font = fontFink18;
-            lblFilterGroup.Font = fontFink18;
+            lstShop.Font = fontFink21;
             lblSort.Font = fontFink18;
             lblAvailability.Font = fontFink18;
-            lblFengShui.Font = fontFink24;
-            lblFengShuiColor.Font = fontFink24;
+            lblFilterGroup.Font = fontFink18;
+            lblFilterCheck.Font = fontFink24;
+            lblAvailabilityCheck.Font = fontFink18; // mismatched in Windows Form Builder (24F)
+            lblSortCheck.Font = fontFink24;
             lblTimesBought.Font = fontFink24;
-            btnDialogSelectYes.Font = fontFink28;
-            btnDialogSelectNo.Font = fontFink28;
-            txtFilterSearch.Font = fontFink18;
+            btnBack.Font = fontFink24;
+            lblFilterCategory.Font = fontFink18;
+            lblFengShuiColor.Font = fontFink24;
+            lblPickup.Font = fontFink20;
+            lblCodeYours.Font = fontConsolas24;
+            chkCodeFast.Font = fontFink20;
+            lblCodeFast.Font = fontConsolas24;
             lblCodeFastCheckbox.Font = fontFink20;
             lblPickup.Font = fontFink20;
             lblCodeDescription.Font = fontFink20;
+            lblCodeFastCheckbox.Font = fontFink20;
         }
 
         private void loadData()
