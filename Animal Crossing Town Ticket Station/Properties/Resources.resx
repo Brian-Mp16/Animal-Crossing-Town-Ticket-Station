@@ -4618,6 +4618,9 @@
   <data name="TK_Icon_Bug5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_Bug5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TK_Icon_BugClap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TK_Icon_BugClap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TK_Icon_CharacterAbles" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_CharacterAbles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -4653,6 +4656,9 @@
   </data>
   <data name="TK_Icon_Fish5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_Fish5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TK_Icon_FishCliff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TK_Icon_FishCliff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TK_Icon_Hol_Christmas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_Hol_Christmas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -4816,6 +4822,9 @@
   <data name="TK_Icon_TownBall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_TownBall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TK_Icon_TownBallCliff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TK_Icon_TownBallCliff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TK_Icon_TownBalloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_TownBalloon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -4848,6 +4857,9 @@
   </data>
   <data name="TK_Icon_TreeShake" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_TreeShake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TK_Icon_VillagerBuy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TK_Icon_VillagerBuy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TK_Icon_VillagerCatchphrase" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_VillagerCatchphras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
