@@ -695,6 +695,8 @@ namespace Animal_Crossing_Town_Ticket_Station
                 Tuple<BugsInfo, int> bugsCodeData = BugsData.GetBugCheckByIndex(new Random().Next(1, 41));
                 try
                 {
+                    if (bugsCodeData.Item1.Name == "Ant" && TaskCheckTimeNook(now, true, false, isFirstDay) == true)
+                        return bugsCodeData;
                     if (IsWithinTime(bugsCodeData.Item1.MonthArray, bugsCodeData.Item1.HourArray, null, bugsCodeData.Item1.WeatherArray, now) == true)
                         return bugsCodeData;
                 }
@@ -1195,6 +1197,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                 intTasksAmount[intTask]--;
             else
             {
+
                 boolDiscardTask = true;
                 lblTaskDescription.Text = String.Format("Discard this task for {0} Tickets?", intTaskRemovePrice);
                 DialogResult dr = MessageBox.Show(String.Format("Do you want to discard this task for the cost of {0} Tickets?", intTaskRemovePrice), "Discard Task?", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
@@ -1209,13 +1212,19 @@ namespace Animal_Crossing_Town_Ticket_Station
                             if (intTasksLast[i] == 0 || i == intTasksMax - 1)
                                 intTasksLast[i] = intTasks[intTask];
                         }
+                        Tuple<TaskInfo, int> taskCodeData = TaskData.GetTaskCheckByIndex(intTasks[intTask]);
+                        switch (taskCodeData.Item1.Tag)
+                        {
+                            case "Fish": intFishTaskIndex = 0; break;
+                            case "Bug": intBugTaskIndex = 0; break;
+                            default: break;
+                        }
                         intTasks[intTask] = 0;
                         intTasksAmount[intTask] = 0;
                         intTicketsCurrent -= intTaskRemovePrice;
                         intTasksDiscarded++;
                         lblTaskDescription.Text = "";
-                        intBugTaskIndex = 0;
-                        intFishTaskIndex = 0;
+                        
 
                         if (intTaskRemovePrice < 500)
                             intTaskRemovePrice += 50;
