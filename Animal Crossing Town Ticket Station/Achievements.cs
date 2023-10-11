@@ -167,12 +167,12 @@ namespace Animal_Crossing_Town_Ticket_Station
             imgList.ImageSize = new Size(32, 32);
             imgList.ColorDepth = ColorDepth.Depth32Bit;
             imgList.Images.Add(Properties.Resources.IC_Stopwatch);
-            for (int i = 1; i < TaskData.GetTaskInfoArrayLength() + 1; i++)
+            for (int i = 1; i < TaskData.GetTaskInfoArrayLength(); i++)
             {
                 Tuple<TaskInfo, int> taskCodeData = TaskData.GetTaskCheckByIndex(i);
                 imgList.Images.Add(taskCodeData.Item1.ImageName);
             }
-            for (int i = TaskData.GetTaskInfoArrayLength() + 1; i < 90; i++)
+            for (int i = TaskData.GetTaskInfoArrayLength(); i < 90; i++)
                 imgList.Images.Add(Properties.Resources.IC_Furniture_PG_Sprite_Upscaled);
             imgList.Images.Add(Properties.Resources.TK_Icon_Daily_Flowers);
             imgList.Images.Add(Properties.Resources.TK_Icon_Daily_Fossil);

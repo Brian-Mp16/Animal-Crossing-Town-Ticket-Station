@@ -585,8 +585,8 @@ namespace Animal_Crossing_Town_Ticket_Station
                 {
                     case "Igloo": if (TaskCheckTimeIgloo(now) == false) { boolTaskChange = true; } break;
                     case "SummerCamper": if (TaskCheckTimeCamper(now) == false) { boolTaskChange = true; } break;
-                    case "Fish5": case "Trash": if (hasRod == false) { boolTaskChange = true; } break;
-                    case "Bug5": if (hasNet == false) { boolTaskChange = true; } break;
+                    case "Fish5": case "Trash": case "FishCliff": if (hasRod == false) { boolTaskChange = true; } break;
+                    case "Bug5": case "BugClap": if (hasNet == false) { boolTaskChange = true; } break;
                     case "HouseNES": if (boolHasNESGame == false || intNookStore > 4) { boolTaskChange = true; } break;
                     case "HouseKKSong": if (intTasksComplete[109] < 1) { boolTaskChange = true; } break;
                     case "HouseGyroid2": case "TreePlant": case "VillagerPitfall": if (hasShovel == false) { boolTaskChange = true; } break;
@@ -635,8 +635,8 @@ namespace Animal_Crossing_Town_Ticket_Station
                         else
                             boolTaskChange = true;
                         break;
-                    case "TicketsComment": if (intTasksCompleteTotal < 50 || intTasksComplete[49] > 15 || boolBrianMp16VideosOff == true || new Random().Next(1, 5) > 2) { boolTaskChange = true; } break;
-                    case "TicketsLike": if (intTasksCompleteTotal < 50 || intTasksComplete[50] > 15 || boolBrianMp16VideosOff == true || new Random().Next(1, 5) > 2) { boolTaskChange = true; } break;
+                    case "TicketsComment": if (intTasksCompleteTotal < 50 || intTasksComplete[49] > 100 || boolBrianMp16VideosOff == true || new Random().Next(1, 5) > 2) { boolTaskChange = true; } break;
+                    case "TicketsLike": if (intTasksCompleteTotal < 50 || intTasksComplete[50] > 100 || boolBrianMp16VideosOff == true || new Random().Next(1, 5) > 2) { boolTaskChange = true; } break;
                     case "TicketsFree": if (intTasksCompleteTotal < 100) { boolTaskChange = true; } break;
                 }
 
