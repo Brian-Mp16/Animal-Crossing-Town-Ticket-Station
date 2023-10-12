@@ -27,7 +27,7 @@ namespace Animal_Crossing_Town_Ticket_Station
         Font? fontFink38;
         Font? fontFink42;
         Font? fontFink48;
-        DateTime loadTime;
+        DateTime loadTimeTasks;
         TimeSpan timeOffset = new TimeSpan(0, 0, 0, 0, 0);
         int intWeather = 0;
         int intNookStore = 0;
@@ -68,6 +68,7 @@ namespace Animal_Crossing_Town_Ticket_Station
         bool boolBirthdaySet = false;
         DateTime birthday;
         bool boolBrianMp16VideosOff = false;
+        Random rnd = new Random();
 
         public Tasks()
         {
@@ -125,10 +126,10 @@ namespace Animal_Crossing_Town_Ticket_Station
             intTimePlayedSeconds++;
             DateTime now = DateTime.Now + timeOffset;
 
-            if (loadTime.Day != now.Day || loadTime.Month != now.Month || loadTime.Year != now.Year)
+            if (loadTimeTasks.Day != now.Day || loadTimeTasks.Month != now.Month || loadTimeTasks.Year != now.Year)
             {
                 intTimePlayedDays++;
-                loadTime = now;
+                loadTimeTasks = now;
                 isFirstDay = false;
                 boolKKSliderTask = false;
                 intDailyTask = 0;
@@ -145,9 +146,9 @@ namespace Animal_Crossing_Town_Ticket_Station
                 UpdateTasks();
             }
 
-            if ((int)now.DayOfWeek == 6 && now.Hour > 19 && boolKKSliderTask == false && loadTime.Day == now.Day && loadTime.Month == now.Month && loadTime.Year == now.Year)
+            if ((int)now.DayOfWeek == 6 && now.Hour > 19 && boolKKSliderTask == false && loadTimeTasks.Day == now.Day && loadTimeTasks.Month == now.Month && loadTimeTasks.Year == now.Year)
             {
-                loadTime = now;
+                loadTimeTasks = now;
                 boolKKSliderTask = true;
                 intTasks[intTasksMax - 1] = 109; //KK Slider
                 intTasksAmount[intTasksMax - 1] = 0;
@@ -164,7 +165,7 @@ namespace Animal_Crossing_Town_Ticket_Station
             string[] strTaskData = new string[intTasksMax];
             string[] strTaskCompleteData = new string[intTasksTotal];
 
-            loadTime = data[0] != "" ? Convert.ToDateTime(data[0]) : DateTime.Now;
+            loadTimeTasks = data[0] != "" ? Convert.ToDateTime(data[0]) : DateTime.Now;
             if (data[1] != "")
                 timeOffset = TimeSpan.Parse(data[1]);
             strPlayerName = data[2] == "" ? "Not Set" : data[2];
@@ -576,7 +577,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                 Tuple<TaskInfo, int> taskCodeData = new Tuple<TaskInfo, int>(null, 0);
                 DateTime now = DateTime.Now + timeOffset;
                 if (strTaskName == "")
-                    taskCodeData = TaskData.GetTaskCheckByRNGValue(new Random().Next(1, 8193));
+                    taskCodeData = TaskData.GetTaskCheckByRNGValue(rnd.Next(1, 8193));
                 else
                     taskCodeData = TaskData.GetTaskCheckByName(strTaskName);
 
@@ -606,6 +607,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                     case "NookWallpaper":
                         if (TaskCheckTimeNook(now, true, false, isFirstDay) == false) { boolTaskChange = true; }
                         break;
+                    case "TicketsCode": if (TaskCheckTimeNook(now, true, false, isFirstDay) == false || intTasksComplete[48] < 3) { boolTaskChange = true; } break;
                     case "IslandNote": case "IslandItem": if (TaskCheckTimeIslander(now) == false || hasIsland == false) { boolTaskChange = true; } break;
                     case "Ereader": if (hasEReader == false) { boolTaskChange = true; } break;
                     case "ShirtPattern": case "CharacterAbles": if (TaskCheckTimeAbles(now) == false) { boolTaskChange = true; } break;
@@ -635,8 +637,8 @@ namespace Animal_Crossing_Town_Ticket_Station
                         else
                             boolTaskChange = true;
                         break;
-                    case "TicketsComment": if (intTasksCompleteTotal < 50 || intTasksComplete[49] > 100 || boolBrianMp16VideosOff == true || new Random().Next(1, 5) > 2) { boolTaskChange = true; } break;
-                    case "TicketsLike": if (intTasksCompleteTotal < 50 || intTasksComplete[50] > 100 || boolBrianMp16VideosOff == true || new Random().Next(1, 5) > 2) { boolTaskChange = true; } break;
+                    case "TicketsComment": if (intTasksCompleteTotal < 50 || intTasksComplete[49] > 100 || boolBrianMp16VideosOff == true || rnd.Next(1, 5) > 2) { boolTaskChange = true; } break;
+                    case "TicketsLike": if (intTasksCompleteTotal < 50 || intTasksComplete[50] > 100 || boolBrianMp16VideosOff == true || rnd.Next(1, 5) > 2) { boolTaskChange = true; } break;
                     case "TicketsFree": if (intTasksCompleteTotal < 100) { boolTaskChange = true; } break;
                 }
 
@@ -677,7 +679,7 @@ namespace Animal_Crossing_Town_Ticket_Station
         {
             while (true)
             {
-                int rng = new Random().Next(1, 41);
+                int rng = rnd.Next(1, 41);
                 Tuple<FishInfo, int> fishCodeData = FishData.GetFishCheckByIndex(rng);
                 try
                 {
@@ -692,7 +694,7 @@ namespace Animal_Crossing_Town_Ticket_Station
         {
             while (true)
             {
-                Tuple<BugsInfo, int> bugsCodeData = BugsData.GetBugCheckByIndex(new Random().Next(1, 41));
+                Tuple<BugsInfo, int> bugsCodeData = BugsData.GetBugCheckByIndex(rnd.Next(1, 41));
                 try
                 {
                     if (bugsCodeData.Item1.Name == "Ant" && TaskCheckTimeNook(now, true, false, isFirstDay) == true)
@@ -708,7 +710,7 @@ namespace Animal_Crossing_Town_Ticket_Station
         private int GetRandomDailyTask(DateTime now)
         {
             //0 - 10 = Flowers, 11 - 17 = Fossils, 18 - 23 = Money Rock, 24 - 28 = Golden Spot, 29 - 38 = Weeds, 39 - 49 = Greet Villagers
-            int rndDailyTask = new Random().Next(0, 50);
+            int rndDailyTask = rnd.Next(0, 50);
             if (rndDailyTask < 11 && TaskCheckTimeNook(now, true, false, false) == true && CheckSaleDay(now) == false && CheckCandyTime(now) == false)
                 intDailyTask = 90; //Plant 2 Flowers
             else if (rndDailyTask < 18 && CheckShovelAccept(now) == true)
@@ -853,7 +855,7 @@ namespace Animal_Crossing_Town_Ticket_Station
             if (now.Month == 10 && now.Day >= 15 && now.Day <= 25 && now.Hour < 8 ||
                 now.Month == 10 && now.Day >= 15 && now.Day <= 25 && now.Hour == 8 && now.Minute < 45 && isFirstDay == false ||
                 now.Month == 10 && now.Day >= 15 && now.Day <= 25 && now.Hour == 8 && now.Minute < 15 && isFirstDay == true)
-                if (new Random().Next(0, 100) < 80)
+                if (rnd.Next(0, 100) < 80)
                     intDailyTask = 105; //Mushroom Season
             UpdateDailyTask();
         }
@@ -861,7 +863,7 @@ namespace Animal_Crossing_Town_Ticket_Station
         private void CheckSnowballTime(DateTime now)
         {
             if (now.Month == 12 && now.Day > 24 || now.Month == 1 || now.Month == 2 && now.Day < 25)
-                if (new Random().Next(0, 100) < 75)
+                if (rnd.Next(0, 100) < 75)
                     intDailyTask = 106; //Snowball Season
             UpdateDailyTask();
         }
@@ -877,7 +879,7 @@ namespace Animal_Crossing_Town_Ticket_Station
         {
             if ((int)now.DayOfWeek == 0 && now.Hour < 11 || (int)now.DayOfWeek == 0 && now.Hour == 11 && now.Minute < 56 && isFirstDay == false ||
                 (int)now.DayOfWeek == 0 && now.Hour == 11 && now.Minute < 31 && isFirstDay == true)
-                if (new Random().Next(0, 100) < 75)
+                if (rnd.Next(0, 100) < 75)
                     intDailyTask = 108; //Joan Turnips
             UpdateDailyTask();
         }

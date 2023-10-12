@@ -37,7 +37,7 @@ namespace Animal_Crossing_Town_Ticket_Station
         static string filepath = filedir + "SaveData.txt";
         static int intDataLines = 50;
         string[] data = new string[intDataLines];
-        DateTime loadTime;
+        DateTime loadTimeShop;
         TimeSpan timeOffset = new TimeSpan(0, 0, 0, 0, 0);
         int intTicketsCurrent = 0;
         int intTicketsTotal = 0;
@@ -64,7 +64,7 @@ namespace Animal_Crossing_Town_Ticket_Station
         static ushort intNESStart = 0x1DA8;
         static ushort intNESEnd = 0x1DE4;
         bool boolNESDialog = false;
-        Point pntDialogYes;
+        Point pntDialogYes = new Point(70, 20);
         string strPlayerName = "";
         string strTownName = "";
         bool boolBirthdaySet = false;
@@ -110,6 +110,7 @@ namespace Animal_Crossing_Town_Ticket_Station
             lstShop.VirtualMode = true;
             //lstShop.VirtualListSize = intItemsTotal;
             lstShop.RetrieveVirtualItem += lstShop_RetrieveVirtualItem;
+            boolLoading = false;
         }
 
         private void CreateFonts()
@@ -156,7 +157,8 @@ namespace Animal_Crossing_Town_Ticket_Station
             intTimePlayedSeconds++;
             DateTime now = DateTime.Now + timeOffset;
 
-            if (loadTime.Day != now.Day && strNESinQueue != "" || loadTime.Month != now.Month && strNESinQueue != "" || loadTime.Year != now.Year && strNESinQueue != "")
+            if (loadTimeShop.Day != now.Day && strNESinQueue != "" && boolNESDialog == false || loadTimeShop.Month != now.Month && strNESinQueue != "" && boolNESDialog == false ||
+                loadTimeShop.Year != now.Year && strNESinQueue != "" && boolNESDialog == false)
             {
                 Tuple<ItemInfo, int> itemCodeData = new Tuple<ItemInfo, int>(null, 0);
                 itemCodeData = ItemData.GetItemCheckByName(strNESinQueue, out int _);
@@ -167,14 +169,14 @@ namespace Animal_Crossing_Town_Ticket_Station
                 txtFilterSearch.Enabled = false;
                 imgShopItem.BackgroundImage = null;
                 imgShopItemSmall.BackgroundImage = ResizeImage(itemCodeData.Item1.ImageName, 140, 140);
+                boolNESDialog = true;
 
                 UpdateShopDialogLabelText(8, strNESinQueue, 0);
-                loadTime = now;
             }
 
             if (boolLoading == true && boolNESDialog == false)
                 lstShop_UpdateFilterAndSort(txtFilterSearch.Text); //PopulateListView();
-            boolLoading = false;
+            
         }
 
         private void UpdateClockImages()
@@ -300,7 +302,7 @@ namespace Animal_Crossing_Town_Ticket_Station
 
             string[] strTaskCompleteData = new string[intTasksTotal];
 
-            loadTime = data[0] != "" ? Convert.ToDateTime(data[0]) : DateTime.Now;
+            loadTimeShop = data[43] != "" ? Convert.ToDateTime(data[43]) : data[0] != "" ? Convert.ToDateTime(data[0]) : DateTime.Now;
             if (data[1] != "")
                 timeOffset = TimeSpan.Parse(data[1]);
             strPlayerName = data[2] == "" ? "Not Set" : data[2];
@@ -336,7 +338,7 @@ namespace Animal_Crossing_Town_Ticket_Station
             data = SaveData.GetSaveData().Item1.Data;
             string sb = "";
 
-            data[0] = (DateTime.Now + timeOffset).ToString();
+            data[43] = loadTimeShop.ToString();
             data[12] = intTicketsCurrent.ToString();
             data[27] = intTimePlayedSeconds.ToString();
             data[13] = intTicketsTotal.ToString();
@@ -1382,7 +1384,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                 imgDialogSelect.Location = this.PointToClient(imgDialogSelect.Parent.PointToScreen(imgDialogSelect.Location));
                 imgDialogSelect.Parent = this;
                 imgDialogSelect.BackColor = Color.Transparent;
-                pntDialogYes = imgDialogSelect.PointToClient(btnDialogSelectYes.Parent.PointToScreen(btnDialogSelectYes.Location));
+                //pntDialogYes = imgDialogSelect.PointToClient(btnDialogSelectYes.Parent.PointToScreen(btnDialogSelectYes.Location));
                 btnDialogSelectYes.Location = pntDialogYes;
                 btnDialogSelectYes.Parent = imgDialogSelect;
                 btnDialogSelectNo.Location = imgDialogSelect.PointToClient(btnDialogSelectNo.Parent.PointToScreen(btnDialogSelectNo.Location));
@@ -1457,7 +1459,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                 imgDialogSelect.Location = this.PointToClient(imgDialogSelect.Parent.PointToScreen(imgDialogSelect.Location));
                 imgDialogSelect.Parent = this;
                 imgDialogSelect.BackColor = Color.Transparent;
-                pntDialogYes = imgDialogSelect.PointToClient(btnDialogSelectYes.Parent.PointToScreen(btnDialogSelectYes.Location));
+                
                 btnDialogSelectYes.Location = new Point(70, 50);
                 btnDialogSelectYes.Parent = imgDialogSelect;
 
@@ -2347,7 +2349,7 @@ namespace Animal_Crossing_Town_Ticket_Station
         {
             if (boolNESDialog == false)
             {
-                if (boolItemSelected == true)
+                if (boolItemSelected == true && lviSelectedItem != null)
                 {
                     Tuple<ItemInfo, int> itemCodeData = ItemData.GetItemCheckByName(lviSelectedItem.Text.Substring(1, lviSelectedItem.Text.Length - 1), out int _);
 
@@ -2387,10 +2389,13 @@ namespace Animal_Crossing_Town_Ticket_Station
             }
             else
             {
+                loadTimeShop = DateTime.Now + timeOffset;
                 lstShop.Visible = true;
                 boolHasNESGame = true;
                 AddPasswordToArray(ItemData.GetItemCheckByName(strNESinQueue, out int _));
                 strNESinQueue = "";
+                btnDialogSelectYes.Location = pntDialogYes;
+                btnDialogSelectYes.Parent = imgDialogSelect;
                 SelectedItemOptionSelected();
                 intLastViewedDialog = 4;
                 UpdateShopDialogLabelText(4, "", 0);

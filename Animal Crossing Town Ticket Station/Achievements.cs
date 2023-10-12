@@ -334,12 +334,12 @@ namespace Animal_Crossing_Town_Ticket_Station
                 lstAchievements.Items.Add(" Individual Tasks Completed:                   ").Font = new Font("FinkHeavy", 24, FontStyle.Underline);
             for (int i = 1; i < TaskData.GetTaskInfoArrayLength(); i++)
             {
-                if (TaskData.GetTaskCheckByIndex(i).Item1.Name == "Catch a X(Fish)")
+                if (TaskData.GetTaskCheckByIndex(i).Item1.Tag == "Fish")
                 {
                     if (intFilterList == 0 || intTasksComplete[i] > 0 && intFilterList == 1 || intTasksComplete[i] <= 0 && intFilterList == 2)
                         lstAchievements.Items.Add(" Catch a Specific Fish:", 4).SubItems.Add(intTasksComplete[i] + " ");
                 }
-                else if (TaskData.GetTaskCheckByIndex(i).Item1.Name == "Catch a X(Bug)")
+                else if (TaskData.GetTaskCheckByIndex(i).Item1.Tag == "Bug")
                 {
                     if (intFilterList == 0 || intTasksComplete[i] > 0 && intFilterList == 1 || intTasksComplete[i] <= 0 && intFilterList == 2)
                         lstAchievements.Items.Add(" Catch a Specific Bug:", 7).SubItems.Add(intTasksComplete[i] + " ");

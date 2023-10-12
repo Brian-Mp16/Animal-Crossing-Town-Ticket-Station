@@ -421,7 +421,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                 if (CheckShopFilters(itemCodeData) == true)
                 {
                     bool boolAvailable = CheckCatalogAvailability(itemCodeData);
-                    if (intBoughtList[itemCodeData.Item1.CatalogIndex] > 0)
+                    if (intBoughtList[itemCodeData.Item1.CatalogIndex] > 0 && strCodeList[itemCodeData.Item1.CatalogIndex] != "")
                     {
                         if (intFilterListCatalog[1] == 1 || intFilterListCatalog[1] == 2 && boolAvailable == true || intFilterListCatalog[1] == 3)
                         {

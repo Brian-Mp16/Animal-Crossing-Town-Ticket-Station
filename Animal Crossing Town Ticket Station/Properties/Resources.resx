@@ -4804,6 +4804,9 @@
   <data name="TK_Icon_SummerCamper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_SummerCamper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TK_Icon_TicketsCode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TK_Icon_TicketsCode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TK_Icon_TicketsComment" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_TicketsComment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -4824,6 +4827,9 @@
   </data>
   <data name="TK_Icon_TownBalloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_TownBalloon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TK_Icon_TownBushes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TK_Icon_TownBushes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TK_Icon_TownMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_TownMessage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

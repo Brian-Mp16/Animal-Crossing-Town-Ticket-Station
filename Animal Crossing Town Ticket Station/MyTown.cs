@@ -23,7 +23,6 @@ namespace Animal_Crossing_Town_Ticket_Station
         Font? fontFink20;
         Font? fontFink21;
         Font? fontFink24;
-        DateTime loadTime;
         DateTime birthday;
         TimeSpan timeOffset = new TimeSpan(0, 0, 0, 0, 0);
         static string filedir = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\ACTownTickets\";
@@ -254,7 +253,6 @@ namespace Animal_Crossing_Town_Ticket_Station
         {
             data = SaveData.GetSaveData().Item1.Data;
 
-            loadTime = data[0] != "" ? Convert.ToDateTime(data[0]) : DateTime.Now;
             if (data[1] != "")
                 timeOffset = TimeSpan.Parse(data[1]);
             strPlayerName = data[2] == "" ? "Not Set" : data[2];

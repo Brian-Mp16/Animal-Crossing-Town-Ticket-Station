@@ -15742,6 +15742,16 @@ namespace Animal_Crossing_Town_Ticket_Station.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TK_Icon_TicketsCode {
+            get {
+                object obj = ResourceManager.GetObject("TK_Icon_TicketsCode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TK_Icon_TicketsComment {
             get {
                 object obj = ResourceManager.GetObject("TK_Icon_TicketsComment", resourceCulture);
@@ -15805,6 +15815,16 @@ namespace Animal_Crossing_Town_Ticket_Station.Properties {
         internal static System.Drawing.Bitmap TK_Icon_TownBalloon {
             get {
                 object obj = ResourceManager.GetObject("TK_Icon_TownBalloon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TK_Icon_TownBushes {
+            get {
+                object obj = ResourceManager.GetObject("TK_Icon_TownBushes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
