@@ -576,7 +576,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                 Tuple<TaskInfo, int> taskCodeData = new Tuple<TaskInfo, int>(null, 0);
                 DateTime now = DateTime.Now + timeOffset;
                 if (strTaskName == "")
-                    taskCodeData = TaskData.GetTaskCheckByRNGValue(new Random().Next(1, 8193));
+                    taskCodeData = TaskData.GetTaskCheckByRNGValue(new Random().Next(1, 8294));
                 else
                     taskCodeData = TaskData.GetTaskCheckByName(strTaskName);
 

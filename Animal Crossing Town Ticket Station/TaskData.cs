@@ -78,7 +78,7 @@ new TaskInfo("Plant a Coconut", "IslandCoconut", 60, 1, 100, 200, 7767, 7832, "P
 new TaskInfo("Change your Island Flag", "IslandFlag", 61, 1, 100, 150, 7833, 7882, "Change your Gyroid Greeting", Properties.Resources.TK_Icon_IslandFlag),
 new TaskInfo("Scan an E-reader card", "Ereader", 62, 1, 100, 150, 7883, 8191, "Mail a Letter with a Gift", Properties.Resources.TK_Icon_Ereader),
 new TaskInfo("Free 100,000 Tickets", "TicketsFree", 63, 1, 100, 100000, 8192, 8192, "Redeem Town Tickets", Properties.Resources.TK_Icon_TicketsFree),
-
+new TaskInfo("Run through Bushes", "Bushes", 64, 1, 100, 100, 8193, 8293, "Shake something out of a Tree", Properties.Resources.TK_Icon_Bushes),
  };
 
         public static int GetTaskInfoArrayLength()

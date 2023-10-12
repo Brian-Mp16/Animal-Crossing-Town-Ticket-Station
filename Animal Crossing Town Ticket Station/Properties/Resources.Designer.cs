@@ -121,7 +121,8 @@ namespace Animal_Crossing_Town_Ticket_Station.Properties {
         ///beatoff
         ///beatyourmeat
         ///beeyotch
-        ///bellend        /// [rest of string was truncated]&quot;;.
+        ///bellend
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string banned_words_list {
             get {
@@ -15755,6 +15756,16 @@ namespace Animal_Crossing_Town_Ticket_Station.Properties {
         internal static System.Drawing.Bitmap TK_Icon_TicketsFree {
             get {
                 object obj = ResourceManager.GetObject("TK_Icon_TicketsFree", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TK_Icon_Bushes {
+            get {
+                object obj = ResourceManager.GetObject("TK_Icon_Bushes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
