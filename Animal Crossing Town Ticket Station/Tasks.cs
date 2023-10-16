@@ -855,8 +855,8 @@ namespace Animal_Crossing_Town_Ticket_Station
             if (now.Month == 10 && now.Day >= 15 && now.Day <= 25 && now.Hour < 8 ||
                 now.Month == 10 && now.Day >= 15 && now.Day <= 25 && now.Hour == 8 && now.Minute < 45 && isFirstDay == false ||
                 now.Month == 10 && now.Day >= 15 && now.Day <= 25 && now.Hour == 8 && now.Minute < 15 && isFirstDay == true)
-                if (rnd.Next(0, 100) < 80)
-                    intDailyTask = 105; //Mushroom Season
+                //if (rnd.Next(0, 100) < 80)
+                intDailyTask = 105; //Mushroom Season
             UpdateDailyTask();
         }
 
@@ -879,8 +879,8 @@ namespace Animal_Crossing_Town_Ticket_Station
         {
             if ((int)now.DayOfWeek == 0 && now.Hour < 11 || (int)now.DayOfWeek == 0 && now.Hour == 11 && now.Minute < 56 && isFirstDay == false ||
                 (int)now.DayOfWeek == 0 && now.Hour == 11 && now.Minute < 31 && isFirstDay == true)
-                if (rnd.Next(0, 100) < 75)
-                    intDailyTask = 108; //Joan Turnips
+                //if (rnd.Next(0, 100) < 75)
+                intDailyTask = 108; //Joan Turnips
             UpdateDailyTask();
         }
 
