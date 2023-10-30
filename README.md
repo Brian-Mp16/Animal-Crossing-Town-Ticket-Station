@@ -3,13 +3,13 @@ Town Tickets for Animal Crossing GameCube - Made by BrianMp16
 
 Please READ this document carefully before downloading and playing!
 
-Town Tickets is currently ONLY available for Windows OS with a computer monitor resolution of 1920 x 1080 or higher. (If graphics appear glitchy, ensure your computer monitor display settings "Scale and layout" is set to 100% and "Display resolution" is set to 1920 x 1080 or higher)
+Town Tickets is currently ONLY available for Windows OS with a computer monitor resolution of 1920 x 1080 and possibly higher. (If graphics appear glitchy, ensure your computer monitor display settings "Scale and layout" is set to 100% and "Display resolution" is set to 1920 x 1080 or higher)
 
 You may need to install .NET 6.0 on your computer to run this program .NET 6.0 Download link:
 https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 
 Animal Crossing Town Tickets download link:
-https://mega.nz/file/OKAEFRRJ#egnxWgN9xrllH4o62FXZzgdnqFqjYrb0qYtgRTuFaUY
+https://mega.nz/file/SToglChY#14gF6mcuFos3jmGF_VpbrWEMgWyp9WrDgyZ7ka44qwE
 
 Please report any bugs/crashes to BrianMp16's Discord #animal-crossing:
 https://discord.gg/2F8javw
