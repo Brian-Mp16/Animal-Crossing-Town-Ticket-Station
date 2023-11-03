@@ -1204,7 +1204,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                 case 6: if (now.Month == intMonth && now.Day >= intDay || now.Month == intMonth + 1) boolPass = true; break;
                 case 7: if (now.Month >= intMonth && now.Month <= intMonth + 2) boolPass = true; break;
                 case 8:
-                    if (intMonth != 11 && now.Month == intMonth && now.Day >= intDay || now.Month != 11 && now.Month > intMonth && now.Month <= intMonth + 2 ||
+                    if (intMonth != 11 && now.Month == intMonth && now.Day >= intDay || intMonth != 11 && now.Month > intMonth && now.Month <= intMonth + 3 ||
                         intMonth == 11 && now.Month == 11 && now.Day >= intDay || intMonth == 11 && now.Month > 11 || intMonth == 11 && now.Month <= 2) boolPass = true; break;
                 default: boolPass = false; break;
             }
