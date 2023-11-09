@@ -126,7 +126,8 @@ namespace Animal_Crossing_Town_Ticket_Station
             intTimePlayedSeconds++;
             DateTime now = DateTime.Now + timeOffset;
 
-            if (loadTimeTasks.Day != now.Day || loadTimeTasks.Month != now.Month || loadTimeTasks.Year != now.Year)
+            if (loadTimeTasks.Day != now.Day && now.Hour > 5 || loadTimeTasks.Day != now.Day && now.Hour < 6 && loadTimeTasks.Hour < 6 ||
+                loadTimeTasks.Day == now.Day && loadTimeTasks.Hour <= 5 && now.Hour > 5 || Math.Abs((now - loadTimeTasks).TotalHours) >= 24)
             {
                 intTimePlayedDays++;
                 loadTimeTasks = now;
@@ -804,19 +805,22 @@ namespace Animal_Crossing_Town_Ticket_Station
                 now.Month == 6 && (int)now.DayOfWeek == 0 && now.Hour == 17 && now.Minute < 31 && isFirstDay == true ||
                 now.Month == 11 && (int)now.DayOfWeek == 0 && now.Hour == 17 && now.Minute < 56 && isFirstDay == false ||
                 now.Month == 11 && (int)now.DayOfWeek == 0 && now.Hour == 17 && now.Minute < 31 && isFirstDay == true)
-                intDailyTask = 100; //Fishing Tourney
-            if (now.Month == 10 && now.Day == 31)
-                intDailyTask = 101; //Halloween
+                if (now.Hour > 5)
+                    intDailyTask = 100; //Fishing Tourney
+            if (now.Month == 10 && now.Day == 31 && now.Hour > 5 || now.Month == 11 && now.Day == 1 && now.Hour < 1)
+                    intDailyTask = 101; //Halloween
             if (now.Month == 11 && now.Day >= 22 && now.Day < 29 && (int)now.DayOfWeek == 4 && now.Hour < 20 ||
                 now.Month == 11 && now.Day >= 22 && now.Day < 29 && (int)now.DayOfWeek == 4 && now.Hour == 20 && now.Minute < 56 && isFirstDay == false ||
                 now.Month == 11 && now.Day >= 22 && now.Day < 29 && (int)now.DayOfWeek == 4 && now.Hour == 20 && now.Minute < 31 && isFirstDay == true)
-                intDailyTask = 102; //Thanksgiving
+                if (now.Hour > 5)
+                    intDailyTask = 102; //Thanksgiving
             if (now.Month == 11 && now.Day >= 23 && now.Day < 30 && (int)now.DayOfWeek == 5 && now.Hour < 21 ||
                 now.Month == 11 && now.Day >= 23 && now.Day < 30 && (int)now.DayOfWeek == 5 && now.Hour == 21 && now.Minute < 56 && isFirstDay == false ||
                 now.Month == 11 && now.Day >= 23 && now.Day < 30 && (int)now.DayOfWeek == 5 && now.Hour == 21 && now.Minute < 31 && isFirstDay == true)
-                intDailyTask = 103; //Sale Day
-            if (now.Month == 12 && now.Day == 24)
-                intDailyTask = 104; //Christmas
+                if (now.Hour > 5)
+                    intDailyTask = 103; //Sale Day
+            if (now.Month == 12 && now.Day == 24 && now.Hour > 5 || now.Month == 12 && now.Day == 25 && now.Hour < 1)
+                    intDailyTask = 104; //Christmas
 
             UpdateDailyTask();
         }
@@ -833,8 +837,12 @@ namespace Animal_Crossing_Town_Ticket_Station
             for (int i = 110; i < TortData.GetTortInfoArrayLength() + 110; i++)
             {
                 Tuple<TortInfo, int> tortCodeData = TortData.GetTortCheckByIndex(i);
-                if (IsWithinTime(tortCodeData.Item1.MonthArray, tortCodeData.Item1.HourArray, tortCodeData.Item1.WeekdayArray, tortCodeData.Item1.WeatherArray, now) == true)
-                    intDailyTask = tortCodeData.Item1.Index;
+                if (i == 133 && now.Month == 12 && now.Day == 31 && now.Hour > 5 || i == 133 && now.Month == 1 && now.Day == 1 && now.Hour < 1)
+                    intDailyTask = tortCodeData.Item1.Index; // New Years Eve
+                else
+                    if (IsWithinTime(tortCodeData.Item1.MonthArray, tortCodeData.Item1.HourArray, tortCodeData.Item1.WeekdayArray, tortCodeData.Item1.WeatherArray, now) == true)
+                        if (now.Hour > 5)
+                            intDailyTask = tortCodeData.Item1.Index;
             }
             UpdateDailyTask();
         }
@@ -845,7 +853,8 @@ namespace Animal_Crossing_Town_Ticket_Station
             {
                 Tuple<TortInfo, int> tortCodeData = TortData.GetTortCheckByIndex(i);
                 if (IsWithinTime(tortCodeData.Item1.MonthArray, tortCodeData.Item1.HourArray, tortCodeData.Item1.WeekdayArray, tortCodeData.Item1.WeatherArray, now) == true)
-                    intDailyTask = tortCodeData.Item1.Index;
+                    if (now.Hour > 5)
+                        intDailyTask = tortCodeData.Item1.Index;
             }
             UpdateDailyTask();
         }
@@ -856,14 +865,15 @@ namespace Animal_Crossing_Town_Ticket_Station
                 now.Month == 10 && now.Day >= 15 && now.Day <= 25 && now.Hour == 8 && now.Minute < 45 && isFirstDay == false ||
                 now.Month == 10 && now.Day >= 15 && now.Day <= 25 && now.Hour == 8 && now.Minute < 15 && isFirstDay == true)
                 //if (rnd.Next(0, 100) < 80)
-                intDailyTask = 105; //Mushroom Season
+                if (now.Hour > 5)
+                    intDailyTask = 105; //Mushroom Season
             UpdateDailyTask();
         }
 
         private void CheckSnowballTime(DateTime now)
         {
             if (now.Month == 12 && now.Day > 24 || now.Month == 1 || now.Month == 2 && now.Day < 25)
-                if (rnd.Next(0, 100) < 75)
+                if (rnd.Next(0, 100) < 80)
                     intDailyTask = 106; //Snowball Season
             UpdateDailyTask();
         }
@@ -880,7 +890,8 @@ namespace Animal_Crossing_Town_Ticket_Station
             if ((int)now.DayOfWeek == 0 && now.Hour < 11 || (int)now.DayOfWeek == 0 && now.Hour == 11 && now.Minute < 56 && isFirstDay == false ||
                 (int)now.DayOfWeek == 0 && now.Hour == 11 && now.Minute < 31 && isFirstDay == true)
                 //if (rnd.Next(0, 100) < 75)
-                intDailyTask = 108; //Joan Turnips
+                if (now.Hour > 5)
+                    intDailyTask = 108; //Joan Turnips
             UpdateDailyTask();
         }
 
@@ -972,7 +983,7 @@ namespace Animal_Crossing_Town_Ticket_Station
             if (now.Hour < intTime[0] && checkMorningHours == true && firstDay == false || now.Hour < intTime[0] - 1 && checkMorningHours == true && firstDay == true ||
                 now.Hour == intTime[0] - 1 && now.Minute < 44 && checkMorningHours == true && firstDay == true && hasShovel == false ||
                 now.Hour >= intTime[1] || now.Hour == intTime[1] - 1 && now.Minute > 55 ||
-                now.Hour == intTime[1] - 1 && now.Minute > 30 && firstDay == true && hasShovel == false)
+                now.Hour == intTime[1] - 1 && now.Minute > 30 && firstDay == true && hasShovel == false || now.Hour < 6)
                 return false;
             if (isRaffle == false & now.Day == DateTime.DaysInMonth(now.Year, now.Month))
                 return false;
@@ -1214,12 +1225,15 @@ namespace Animal_Crossing_Town_Ticket_Station
                             if (intTasksLast[i] == 0 || i == intTasksMax - 1)
                                 intTasksLast[i] = intTasks[intTask];
                         }
-                        Tuple<TaskInfo, int> taskCodeData = TaskData.GetTaskCheckByIndex(intTasks[intTask]);
-                        switch (taskCodeData.Item1.Tag)
+                        if (intTasks[intTask] < 90)
                         {
-                            case "Fish": intFishTaskIndex = 0; break;
-                            case "Bug": intBugTaskIndex = 0; break;
-                            default: break;
+                            Tuple<TaskInfo, int> taskCodeData = TaskData.GetTaskCheckByIndex(intTasks[intTask]);
+                            switch (taskCodeData.Item1.Tag)
+                            {
+                                case "Fish": intFishTaskIndex = 0; break;
+                                case "Bug": intBugTaskIndex = 0; break;
+                                default: break;
+                            }
                         }
                         intTasks[intTask] = 0;
                         intTasksAmount[intTask] = 0;

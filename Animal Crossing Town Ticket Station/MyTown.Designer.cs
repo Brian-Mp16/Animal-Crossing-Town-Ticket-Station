@@ -260,7 +260,7 @@
             imgCL_hour1.BackColor = Color.Transparent;
             imgCL_hour1.Image = Properties.Resources.CL_time_0;
             imgCL_hour1.InitialImage = Properties.Resources.CL_time_0;
-            imgCL_hour1.Location = new Point(1698, 1035);
+            imgCL_hour1.Location = new Point(1697, 1035);
             imgCL_hour1.Margin = new Padding(4, 3, 4, 3);
             imgCL_hour1.Name = "imgCL_hour1";
             imgCL_hour1.Size = new Size(40, 38);
@@ -332,7 +332,7 @@
             imgCL_day1.BackColor = Color.Transparent;
             imgCL_day1.Image = Properties.Resources.CL_date_1;
             imgCL_day1.InitialImage = Properties.Resources.CL_date_1;
-            imgCL_day1.Location = new Point(1698, 981);
+            imgCL_day1.Location = new Point(1697, 981);
             imgCL_day1.Margin = new Padding(4, 3, 4, 3);
             imgCL_day1.Name = "imgCL_day1";
             imgCL_day1.Size = new Size(52, 52);
@@ -631,7 +631,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.UI_BG_Settings;
-            ClientSize = new Size(1918, 1031);
+            ClientSize = new Size(1918, 1080);
             Controls.Add(chkBrianMp16);
             Controls.Add(lblSymbolHelp);
             Controls.Add(txtSymbols);
