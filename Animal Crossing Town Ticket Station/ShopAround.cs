@@ -1175,7 +1175,11 @@ namespace Animal_Crossing_Town_Ticket_Station
             }
 
             if (strItemType == "Everything" && strItemCategory == "Everything" || strItemType == "Everything" && strItemCategory == itemCodeData.Item1.ItemCategory ||
+                strItemType == "Everything" && strItemCategory == "Nook" && itemCodeData.Item1.Availability == 9 ||
+                strItemType == "Everything" && strItemCategory == "Nook" && itemCodeData.Item1.Availability == 8 ||
                 strItemType == "Everything" && strItemCategory == "Other" && itemCodeData.Item1.ItemCategory != "Nook" && itemCodeData.Item1.ItemCategory != "Seasonal" ||
+                strItemType == "Furniture" && strItemCategory == "Nook" && itemCodeData.Item1.Availability == 9 ||
+                strItemType == "Clothing" && strItemCategory == "Nook" && itemCodeData.Item1.Availability == 8 ||
                 itemCodeData.Item1.ItemType == strItemType && strItemCategory == "Everything" ||
                 itemCodeData.Item1.ItemType == strItemType && itemCodeData.Item1.ItemCategory == strItemCategory)
                 boolPass = true;
@@ -1199,7 +1203,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                 case 1: if (now.Month == intMonth && now.Day >= intDay && now.Day < intDay + 7 || now.Month == intMonth + 1 && intDay == 31 && now.Day < 7) boolPass = true; break;
                 case 2: if (now.Month == intMonth && now.Day >= intDay - 3 && now.Day <= intDay + 3 || now.Month == intMonth + 1 && intDay == 31 && now.Day <= 3) boolPass = true; break;
                 case 3: if (now.Month == intBirthdayMonth) boolPass = true; break;
-                case 4: if (now.Month == intMonth) boolPass = true; break;
+                case 4: case 9:  if (now.Month == intMonth) boolPass = true; break;
                 case 5: if (now.Month == intMonth && now.Day <= intDay || now.Month == intMonth - 1) boolPass = true; break;
                 case 6: if (now.Month == intMonth && now.Day >= intDay || now.Month == intMonth + 1) boolPass = true; break;
                 case 7: if (now.Month >= intMonth && now.Month <= intMonth + 2) boolPass = true; break;
@@ -1275,7 +1279,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                     case "Furniture":
                         intBoughtUnique[0]++;
 
-                        if (itemCodeData.Item1.ItemCategory != "Seasonal")
+                        if (itemCodeData.Item1.ItemCategory != "Seasonal" || itemCodeData.Item1.Availability == 9)
                             intBoughtUnique[16]++;
 
                         switch (itemCodeData.Item1.ItemCategory)
@@ -1528,7 +1532,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                     if (boolBirthdaySet == true) { intDay = 1; intDay2 = DateTime.DaysInMonth(now.Year, now.Month); intMonth = birthday.Month; intMonth2 = birthday.Month; }
                     else { intDay = 1; intDay2 = 31; intMonth = 1; intMonth2 = 12; }
                     break;
-                case 4: intDay = 1; intDay2 = DateTime.DaysInMonth(now.Year, intMonth); break;
+                case 4: case 9:  intDay = 1; intDay2 = DateTime.DaysInMonth(now.Year, intMonth); break;
                 case 5: intDay2 = intDay; intMonth2 = intMonth; intDay = 1; intMonth -= 1; break;
                 case 6: intDay2 = DateTime.DaysInMonth(now.Year, intMonth + 1); intMonth2 = intMonth + 1; break;
                 case 7: intDay = 1; intDay2 = DateTime.DaysInMonth(now.Year, intMonth + 2); intMonth2 = intMonth + 2; break;

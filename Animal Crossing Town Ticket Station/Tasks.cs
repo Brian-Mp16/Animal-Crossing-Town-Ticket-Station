@@ -698,7 +698,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                 Tuple<BugsInfo, int> bugsCodeData = BugsData.GetBugCheckByIndex(rnd.Next(1, 41));
                 try
                 {
-                    if (bugsCodeData.Item1.Name == "Ant" && TaskCheckTimeNook(now, true, false, isFirstDay) == true)
+                    if (bugsCodeData.Item1.Name == "Ant" && TaskCheckTimeNook(now, true, false, isFirstDay) == true && intWeather == 0)
                         return bugsCodeData;
                     if (IsWithinTime(bugsCodeData.Item1.MonthArray, bugsCodeData.Item1.HourArray, null, bugsCodeData.Item1.WeatherArray, now) == true)
                         return bugsCodeData;
