@@ -949,7 +949,13 @@ namespace Animal_Crossing_Town_Ticket_Station
             }
 
             if (strItemType == "Everything" && strItemCategory == "Everything" || strItemType == "Everything" && strItemCategory == itemCodeData.Item1.ItemCategory ||
+                strItemType == "Everything" && strItemCategory == "Nook" && itemCodeData.Item1.Availability == 9 ||
+                strItemType == "Everything" && strItemCategory == "Nook" && itemCodeData.Item1.Availability == 8 ||
                 strItemType == "Everything" && strItemCategory == "Other" && itemCodeData.Item1.ItemCategory != "Nook" && itemCodeData.Item1.ItemCategory != "Seasonal" ||
+                strItemType == "Furniture" && strItemCategory == "Nook" && itemCodeData.Item1.Availability == 9 ||
+                strItemType == "Clothing" && strItemCategory == "Nook" && itemCodeData.Item1.Availability == 8 ||
+                strItemType == "Everything" && strItemCategory == "Seasonal" && itemCodeData.Item1.ItemCategory == "Pinwheels" ||
+                strItemType == "Everything" && strItemCategory == "Seasonal" && itemCodeData.Item1.ItemCategory == "Fans" ||
                 itemCodeData.Item1.ItemType == strItemType && strItemCategory == "Everything" ||
                 itemCodeData.Item1.ItemType == strItemType && itemCodeData.Item1.ItemCategory == strItemCategory)
                 boolPass = true;
