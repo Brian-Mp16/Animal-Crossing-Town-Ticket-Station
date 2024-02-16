@@ -872,7 +872,7 @@ namespace Animal_Crossing_Town_Ticket_Station
 
         private void CheckSnowballTime(DateTime now)
         {
-            if (now.Month == 12 && now.Day > 24 || now.Month == 1 || now.Month == 2 && now.Day < 25)
+            if (now.Month == 12 && now.Day > 24 || now.Month == 1 || now.Month == 2 && now.Day < 18)
                 if (rnd.Next(0, 100) < 80)
                     intDailyTask = 106; //Snowball Season
             UpdateDailyTask();
@@ -1006,7 +1006,7 @@ namespace Animal_Crossing_Town_Ticket_Station
 
         private bool TaskCheckTimeIgloo(DateTime now)
         {
-            if (now.Month > 2 || now.Month == 1 && now.Day == 1 || now.Month == 2 && now.Day > 24)
+            if (now.Month > 2 || now.Month == 1 && now.Day == 1 || now.Month == 2 && now.Day > 23)
                 return false;
             if (now.Hour < 10 || now.Hour >= 22 || now.Hour == 21 && now.Minute > 55 || now.Hour == 21 && now.Minute > 30 && isFirstDay == true && hasShovel == false)
                 return false;
