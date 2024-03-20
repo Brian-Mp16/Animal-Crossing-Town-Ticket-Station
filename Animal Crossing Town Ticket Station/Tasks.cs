@@ -751,7 +751,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                     case 1: if (now.Day > MonthArray[now.Month - 1, 0]) { boolPass = false; } break;
                     case 2: if (now.Day <= MonthArray[now.Month - 1, 0]) { boolPass = false; } break;
                     case 3: if (now.Day != MonthArray[now.Month - 1, 0]) { boolPass = false; } break;
-                    case 4: if ((DateTime.IsLeapYear(now.Year) ? now.Day - 1 : now.Day) != MonthArray[now.Month - 1, 0]) { boolPass = false; } break;
+                    case 4: if ((DateTime.IsLeapYear(now.Year) ? now.Day + 1 : now.Day) != MonthArray[now.Month - 1, 0]) { boolPass = false; } break;
                     case 5: if (now.Day < MonthArray[now.Month - 1, 0] || now.Day > MonthArray[now.Month - 1, 0] + 2) { boolPass = false; } break;
                     case 6: if (now.Day > 7 || (int)now.DayOfWeek != WeekdayArray[0, 0] + WeekdayArray[0, 1] - 1) { boolPass = false; } break;
                     case 7: if (now.Day < 8 || now.Day > 14 || (int)now.DayOfWeek != WeekdayArray[0, 0] + WeekdayArray[0, 1] - 1) { boolPass = false; } break;
