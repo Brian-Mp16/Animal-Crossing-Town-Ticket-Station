@@ -3,13 +3,17 @@ Town Tickets for Animal Crossing GameCube - Made by BrianMp16
 
 Please READ this document carefully before downloading and playing!
 
-Town Tickets is currently ONLY available for Windows OS with a computer monitor resolution of 1920 x 1080 and possibly higher. (If graphics appear glitchy, ensure your computer monitor display settings "Scale and layout" is set to 100% and "Display resolution" is set to 1920 x 1080 or higher)
+It is SAFE to UPGRADE your Town Tickets program from an earlier version - it will not affect your save data. However, downgrading your Town Tickets program WILL cause issues with save data from a newer version, so please do not downgrade unless you plan on starting your Animal Crossing town over.
+
+Town Tickets is currently ONLY available for Windows OS with a computer monitor resolution of 1920 x 1080 or higher. (If graphics appear glitchy, ensure your computer monitor display settings "Scale and layout" is set to 100% and "Display resolution" is set to 1920 x 1080 or higher).
+
+Town Tickets is ONLY supported for the U.S. NTSC version of Animal Crossing. Playing on a EU PAL version will mostly work but some holiday event days will be incorrect and more importantly some fast codes WILL CRASH the game ONLY for the EU PAL version due to version differences, so I recommend not using them if you're playing on the EU PAL version only. Thanks for understanding!
 
 You may need to install .NET 6.0 on your computer to run this program .NET 6.0 Download link:
 https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 
 Animal Crossing Town Tickets download link:
-https://mega.nz/file/WWwA0YqY#ZpuDIFknWee7H7HBUIaVyw4vyMmx9BEj5JVMoVyJQk4
+https://mega.nz/file/nKoXECRL#CrrBzt3PvdCdecdWlGxSxxu2QuOzQo2yOFN-l96_I20
 
 Please report any bugs/crashes to BrianMp16's Discord #animal-crossing:
 https://discord.gg/2F8javw
