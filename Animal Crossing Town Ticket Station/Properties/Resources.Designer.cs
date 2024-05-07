@@ -15182,6 +15182,16 @@ namespace Animal_Crossing_Town_Ticket_Station.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TK_Icon_Daily_Gyroids {
+            get {
+                object obj = ResourceManager.GetObject("TK_Icon_Daily_Gyroids", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TK_Icon_Daily_MoneyRock {
             get {
                 object obj = ResourceManager.GetObject("TK_Icon_Daily_MoneyRock", resourceCulture);
@@ -15192,9 +15202,29 @@ namespace Animal_Crossing_Town_Ticket_Station.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TK_Icon_Daily_Rainbow {
+            get {
+                object obj = ResourceManager.GetObject("TK_Icon_Daily_Rainbow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TK_Icon_Daily_ShinySpot {
             get {
                 object obj = ResourceManager.GetObject("TK_Icon_Daily_ShinySpot", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TK_Icon_Daily_Tickets {
+            get {
+                object obj = ResourceManager.GetObject("TK_Icon_Daily_Tickets", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15442,6 +15472,16 @@ namespace Animal_Crossing_Town_Ticket_Station.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TK_Icon_HouseAerobics {
+            get {
+                object obj = ResourceManager.GetObject("TK_Icon_HouseAerobics", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TK_Icon_HouseDiary {
             get {
                 object obj = ResourceManager.GetObject("TK_Icon_HouseDiary", resourceCulture);
@@ -15512,6 +15552,16 @@ namespace Animal_Crossing_Town_Ticket_Station.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TK_Icon_HouseJudgesBell {
+            get {
+                object obj = ResourceManager.GetObject("TK_Icon_HouseJudgesBell", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TK_Icon_HouseKKSong {
             get {
                 object obj = ResourceManager.GetObject("TK_Icon_HouseKKSong", resourceCulture);
@@ -15525,6 +15575,56 @@ namespace Animal_Crossing_Town_Ticket_Station.Properties {
         internal static System.Drawing.Bitmap TK_Icon_HouseNES {
             get {
                 object obj = ResourceManager.GetObject("TK_Icon_HouseNES", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TK_Icon_HousePhone {
+            get {
+                object obj = ResourceManager.GetObject("TK_Icon_HousePhone", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TK_Icon_HousePiggyBank {
+            get {
+                object obj = ResourceManager.GetObject("TK_Icon_HousePiggyBank", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TK_Icon_HouseStarman {
+            get {
+                object obj = ResourceManager.GetObject("TK_Icon_HouseStarman", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TK_Icon_HouseTanabataPalm {
+            get {
+                object obj = ResourceManager.GetObject("TK_Icon_HouseTanabataPalm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TK_Icon_HouseWallFloor {
+            get {
+                object obj = ResourceManager.GetObject("TK_Icon_HouseWallFloor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

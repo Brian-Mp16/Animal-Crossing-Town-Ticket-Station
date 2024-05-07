@@ -180,9 +180,9 @@ namespace Animal_Crossing_Town_Ticket_Station
             imgList.Images.Add(Properties.Resources.TK_Icon_Daily_ShinySpot);
             imgList.Images.Add(Properties.Resources.TK_Icon_Daily_Weeds);
             imgList.Images.Add(Properties.Resources.TK_Icon_Daily_Greeting);
-            imgList.Images.Add(Properties.Resources.IC_Furniture_PG_Sprite_Upscaled);
-            imgList.Images.Add(Properties.Resources.IC_Furniture_PG_Sprite_Upscaled);
-            imgList.Images.Add(Properties.Resources.IC_Furniture_PG_Sprite_Upscaled);
+            imgList.Images.Add(Properties.Resources.TK_Icon_Daily_Tickets);
+            imgList.Images.Add(Properties.Resources.TK_Icon_Daily_Gyroids);
+            imgList.Images.Add(Properties.Resources.TK_Icon_Daily_Rainbow);
             imgList.Images.Add(Properties.Resources.TK_Icon_Birthday);
             imgList.Images.Add(Properties.Resources.TK_Icon_Hol_FishingTourney);
             imgList.Images.Add(Properties.Resources.TK_Icon_Hol_Halloween);
@@ -362,6 +362,12 @@ namespace Animal_Crossing_Town_Ticket_Station
                 lstAchievements.Items.Add(" Pick 5 Weeds:", 94).SubItems.Add(intTasksComplete[94] + " ");
             if (intFilterList == 0 || intTasksComplete[95] > 0 && intFilterList == 1 || intTasksComplete[95] <= 0 && intFilterList == 2)
                 lstAchievements.Items.Add(" Greet 3 of your Villagers:", 95).SubItems.Add(intTasksComplete[95] + " ");
+            if (intFilterList == 0 || intTasksComplete[96] > 0 && intFilterList == 1 || intTasksComplete[96] <= 0 && intFilterList == 2)
+                lstAchievements.Items.Add(" Get 5 Raffle Tickets from Nook's:", 96).SubItems.Add(intTasksComplete[96] + " ");
+            if (intFilterList == 0 || intTasksComplete[97] > 0 && intFilterList == 1 || intTasksComplete[97] <= 0 && intFilterList == 2)
+                lstAchievements.Items.Add(" Dig up 2 Gyroids:", 97).SubItems.Add(intTasksComplete[97] + " ");
+            if (intFilterList == 0 || intTasksComplete[98] > 0 && intFilterList == 1 || intTasksComplete[98] <= 0 && intFilterList == 2)
+                lstAchievements.Items.Add(" Admire a Rainbow over a Waterfall:", 98).SubItems.Add(intTasksComplete[98] + " ");
             if (intFilterList == 0 || intTasksComplete[99] > 0 && intFilterList == 1 || intTasksComplete[99] <= 0 && intFilterList == 2)
                 lstAchievements.Items.Add(" Free Tickets for your Birthday:", 99).SubItems.Add(intTasksComplete[99] + " ");
             if (intFilterList == 0 || intTasksComplete[100] > 0 && intFilterList == 1 || intTasksComplete[100] <= 0 && intFilterList == 2)

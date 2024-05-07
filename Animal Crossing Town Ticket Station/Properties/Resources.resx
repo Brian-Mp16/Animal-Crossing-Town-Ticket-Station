@@ -4636,11 +4636,20 @@
   <data name="TK_Icon_Daily_Greeting" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_Daily_Greeting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TK_Icon_Daily_Gyroids" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TK_Icon_Daily_Gyroids.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TK_Icon_Daily_MoneyRock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_Daily_MoneyRock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TK_Icon_Daily_Rainbow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TK_Icon_Daily_Rainbow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TK_Icon_Daily_ShinySpot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_Daily_ShinySpot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TK_Icon_Daily_Tickets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TK_Icon_Daily_Tickets.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TK_Icon_Daily_Weeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_Daily_Weeds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -4714,6 +4723,9 @@
   <data name="TK_Icon_Hol_TortimerNewYears" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_Hol_TortimerNewYears.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TK_Icon_HouseAerobics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TK_Icon_HouseAerobics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TK_Icon_HouseDiary" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_HouseDiary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -4735,11 +4747,29 @@
   <data name="TK_Icon_HouseGyroid2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_HouseGyroid2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TK_Icon_HouseJudgesBell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TK_Icon_HouseJudgesBell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TK_Icon_HouseKKSong" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_HouseKKSong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TK_Icon_HouseNES" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_HouseNES.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TK_Icon_HousePhone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TK_Icon_HousePhone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TK_Icon_HousePiggyBank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TK_Icon_HousePiggyBank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TK_Icon_HouseStarman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TK_Icon_HouseStarman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TK_Icon_HouseTanabataPalm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TK_Icon_HouseTanabataPalm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TK_Icon_HouseWallFloor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TK_Icon_HouseWallFloor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TK_Icon_Igloo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_Igloo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
