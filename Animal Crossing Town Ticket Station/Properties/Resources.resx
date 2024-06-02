@@ -4723,6 +4723,9 @@
   <data name="TK_Icon_Hol_TortimerNewYears" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_Hol_TortimerNewYears.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TK_Icon_Hol_TortimerVacation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TK_Icon_Hol_TortimerVacation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TK_Icon_HouseAerobics" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_HouseAerobics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -4795,6 +4798,9 @@
   <data name="TK_Icon_IslandNote" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_IslandNote.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TK_Icon_Lighthouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TK_Icon_Lighthouse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TK_Icon_NookBells" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_NookBells.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -4822,11 +4828,17 @@
   <data name="TK_Icon_ShirtChange" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_ShirtChange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TK_Icon_ShirtFan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TK_Icon_ShirtFan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TK_Icon_ShirtMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_ShirtMenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TK_Icon_ShirtPattern" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_ShirtPattern.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TK_Icon_ShirtPinwheel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TK_Icon_ShirtPinwheel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TK_Icon_ShirtUmbrella" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TK_Icon_ShirtUmbrella.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

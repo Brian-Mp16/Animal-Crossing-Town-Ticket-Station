@@ -70,6 +70,9 @@
             lblBirthday = new Label();
             lblSymbolHelp = new Label();
             chkBrianMp16 = new CheckBox();
+            lblHometownDay = new Label();
+            cmbHometownDay = new ComboBox();
+            txtHometownDay = new TextBox();
             ((System.ComponentModel.ISupportInitialize)imgCL_day2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)imgCL_dot).BeginInit();
             ((System.ComponentModel.ISupportInitialize)imgCL_weekday).BeginInit();
@@ -345,7 +348,7 @@
             calChangeTimeCalendar.Cursor = Cursors.Hand;
             calChangeTimeCalendar.Font = new Font("FinkHeavy", 12F, FontStyle.Regular, GraphicsUnit.Point);
             calChangeTimeCalendar.ForeColor = SystemColors.MenuText;
-            calChangeTimeCalendar.Location = new Point(1120, 795);
+            calChangeTimeCalendar.Location = new Point(1120, 851);
             calChangeTimeCalendar.MaxDate = new DateTime(2030, 12, 31, 0, 0, 0, 0);
             calChangeTimeCalendar.MaxSelectionCount = 1;
             calChangeTimeCalendar.MinDate = new DateTime(2000, 1, 1, 0, 0, 0, 0);
@@ -364,7 +367,7 @@
             btnChangeTime.FlatAppearance.BorderSize = 0;
             btnChangeTime.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             btnChangeTime.ForeColor = Color.Black;
-            btnChangeTime.Location = new Point(1530, 1027);
+            btnChangeTime.Location = new Point(1530, 1031);
             btnChangeTime.Margin = new Padding(7, 8, 7, 8);
             btnChangeTime.MinimumSize = new Size(158, 40);
             btnChangeTime.Name = "btnChangeTime";
@@ -380,7 +383,7 @@
             lblChangeTime.BackColor = Color.Transparent;
             lblChangeTime.Font = new Font("FinkHeavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblChangeTime.ForeColor = Color.Black;
-            lblChangeTime.Location = new Point(1090, 757);
+            lblChangeTime.Location = new Point(1090, 819);
             lblChangeTime.Margin = new Padding(4, 0, 4, 0);
             lblChangeTime.MinimumSize = new Size(280, 42);
             lblChangeTime.Name = "lblChangeTime";
@@ -396,7 +399,7 @@
             cmbChangeTimeHour.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             cmbChangeTimeHour.FormattingEnabled = true;
             cmbChangeTimeHour.Items.AddRange(new object[] { "12 am", "1 am", "2 am", "3 am", "4 am", "5 am", "6 am", "7 am", "8 am", "9 am", "10 am", "11 am", "12 pm", "1 pm", "2 pm", "3 pm", "4 pm", "5 pm", "6 pm", "7 pm", "8 pm", "9 pm", "10 pm", "11 pm" });
-            cmbChangeTimeHour.Location = new Point(1120, 977);
+            cmbChangeTimeHour.Location = new Point(874, 1030);
             cmbChangeTimeHour.Margin = new Padding(4, 3, 4, 3);
             cmbChangeTimeHour.Name = "cmbChangeTimeHour";
             cmbChangeTimeHour.Size = new Size(106, 40);
@@ -409,7 +412,7 @@
             cmbChangeTimeMinute.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             cmbChangeTimeMinute.FormattingEnabled = true;
             cmbChangeTimeMinute.Items.AddRange(new object[] { "00 min", "01 min", "02 min", "03 min", "04 min", "05 min", "06 min", "07 min", "08 min", "09 min", "10 min", "11 min", "12 min", "13 min", "14 min", "15 min", "16 min", "17 min", "18 min", "19 min", "20 min", "21 min", "22 min", "23 min", "24 min", "25 min", "26 min", "27 min", "28 min", "29 min", "30 min", "31 min", "32 min", "33 min", "34 min", "35 min", "36 min", "37 min", "38 min", "39 min", "40 min", "41 min", "42 min", "43 min", "44 min", "45 min", "46 min", "47 min", "48 min", "49 min", "50 min", "51 min", "52 min", "53 min", "54 min", "55 min", "56 min", "57 min", "58 min", "59 min" });
-            cmbChangeTimeMinute.Location = new Point(1241, 977);
+            cmbChangeTimeMinute.Location = new Point(988, 1030);
             cmbChangeTimeMinute.Margin = new Padding(4, 3, 4, 3);
             cmbChangeTimeMinute.Name = "cmbChangeTimeMinute";
             cmbChangeTimeMinute.Size = new Size(106, 40);
@@ -423,7 +426,7 @@
             btnChangeTimeAccept.FlatAppearance.BorderSize = 0;
             btnChangeTimeAccept.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             btnChangeTimeAccept.ForeColor = Color.FromArgb(0, 192, 0);
-            btnChangeTimeAccept.Location = new Point(1120, 1027);
+            btnChangeTimeAccept.Location = new Point(1120, 1031);
             btnChangeTimeAccept.Margin = new Padding(7, 8, 7, 8);
             btnChangeTimeAccept.MinimumSize = new Size(100, 40);
             btnChangeTimeAccept.Name = "btnChangeTimeAccept";
@@ -441,7 +444,7 @@
             btnChangeTimeCancel.FlatAppearance.BorderSize = 0;
             btnChangeTimeCancel.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             btnChangeTimeCancel.ForeColor = Color.Red;
-            btnChangeTimeCancel.Location = new Point(1241, 1028);
+            btnChangeTimeCancel.Location = new Point(1241, 1032);
             btnChangeTimeCancel.Margin = new Padding(7, 8, 7, 8);
             btnChangeTimeCancel.MinimumSize = new Size(100, 40);
             btnChangeTimeCancel.Name = "btnChangeTimeCancel";
@@ -459,7 +462,7 @@
             btnChangeTimeActual.FlatAppearance.BorderSize = 0;
             btnChangeTimeActual.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             btnChangeTimeActual.ForeColor = Color.Black;
-            btnChangeTimeActual.Location = new Point(1152, 707);
+            btnChangeTimeActual.Location = new Point(912, 979);
             btnChangeTimeActual.Margin = new Padding(7, 8, 7, 8);
             btnChangeTimeActual.MinimumSize = new Size(100, 40);
             btnChangeTimeActual.Name = "btnChangeTimeActual";
@@ -491,7 +494,7 @@
             btnChangeName.FlatAppearance.BorderSize = 0;
             btnChangeName.Font = new Font("FinkHeavy", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             btnChangeName.ForeColor = Color.Black;
-            btnChangeName.Location = new Point(1530, 981);
+            btnChangeName.Location = new Point(1530, 985);
             btnChangeName.Margin = new Padding(7, 8, 7, 8);
             btnChangeName.MinimumSize = new Size(158, 40);
             btnChangeName.Name = "btnChangeName";
@@ -505,7 +508,7 @@
             // 
             txtPlayerName.BackColor = Color.PapayaWhip;
             txtPlayerName.Font = new Font("Consolas", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPlayerName.Location = new Point(1090, 536);
+            txtPlayerName.Location = new Point(1090, 522);
             txtPlayerName.Margin = new Padding(4, 3, 4, 3);
             txtPlayerName.Name = "txtPlayerName";
             txtPlayerName.Size = new Size(280, 39);
@@ -517,7 +520,7 @@
             // 
             txtTownName.BackColor = SystemColors.Info;
             txtTownName.Font = new Font("Consolas", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txtTownName.Location = new Point(1090, 622);
+            txtTownName.Location = new Point(1090, 602);
             txtTownName.Margin = new Padding(4, 3, 4, 3);
             txtTownName.Name = "txtTownName";
             txtTownName.Size = new Size(280, 39);
@@ -529,7 +532,7 @@
             // 
             txtBirthday.BackColor = Color.Gainsboro;
             txtBirthday.Font = new Font("Consolas", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txtBirthday.Location = new Point(1090, 709);
+            txtBirthday.Location = new Point(1090, 775);
             txtBirthday.Margin = new Padding(4, 3, 4, 3);
             txtBirthday.Name = "txtBirthday";
             txtBirthday.ReadOnly = true;
@@ -556,7 +559,7 @@
             lblPlayerName.BackColor = Color.Transparent;
             lblPlayerName.Font = new Font("FinkHeavy", 20.25F, FontStyle.Underline, GraphicsUnit.Point);
             lblPlayerName.ForeColor = Color.Gold;
-            lblPlayerName.Location = new Point(1090, 502);
+            lblPlayerName.Location = new Point(1090, 489);
             lblPlayerName.Margin = new Padding(4, 0, 4, 0);
             lblPlayerName.MaximumSize = new Size(280, 42);
             lblPlayerName.MinimumSize = new Size(280, 42);
@@ -572,7 +575,7 @@
             lblTownName.BackColor = Color.Transparent;
             lblTownName.Font = new Font("FinkHeavy", 20.25F, FontStyle.Underline, GraphicsUnit.Point);
             lblTownName.ForeColor = Color.Gold;
-            lblTownName.Location = new Point(1090, 588);
+            lblTownName.Location = new Point(1090, 569);
             lblTownName.Margin = new Padding(4, 0, 4, 0);
             lblTownName.MinimumSize = new Size(280, 42);
             lblTownName.Name = "lblTownName";
@@ -587,7 +590,7 @@
             lblBirthday.BackColor = Color.Transparent;
             lblBirthday.Font = new Font("FinkHeavy", 20.25F, FontStyle.Underline, GraphicsUnit.Point);
             lblBirthday.ForeColor = Color.Gold;
-            lblBirthday.Location = new Point(1090, 674);
+            lblBirthday.Location = new Point(1090, 738);
             lblBirthday.Margin = new Padding(4, 0, 4, 0);
             lblBirthday.MinimumSize = new Size(280, 42);
             lblBirthday.Name = "lblBirthday";
@@ -626,12 +629,55 @@
             chkBrianMp16.Visible = false;
             chkBrianMp16.CheckedChanged += chkBrianMp16_CheckedChanged;
             // 
+            // lblHometownDay
+            // 
+            lblHometownDay.AutoSize = true;
+            lblHometownDay.BackColor = Color.Transparent;
+            lblHometownDay.Font = new Font("FinkHeavy", 20.25F, FontStyle.Underline, GraphicsUnit.Point);
+            lblHometownDay.ForeColor = Color.Gold;
+            lblHometownDay.Location = new Point(1090, 653);
+            lblHometownDay.Margin = new Padding(4, 0, 4, 0);
+            lblHometownDay.MinimumSize = new Size(280, 42);
+            lblHometownDay.Name = "lblHometownDay";
+            lblHometownDay.Size = new Size(286, 42);
+            lblHometownDay.TabIndex = 50;
+            lblHometownDay.Text = "   Your Hometown Day   ";
+            lblHometownDay.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // cmbHometownDay
+            // 
+            cmbHometownDay.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbHometownDay.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            cmbHometownDay.FormattingEnabled = true;
+            cmbHometownDay.Items.AddRange(new object[] { "July 1st", "July 2nd", "July 3rd", "July 5th", "July 6th", "July 7th", "July 8th", "July 9th", "July 10th", "July 11th", "July 12th", "July 13th", "July 14th", "July 15th", "July 16th", "July 17th", "July 18th", "July 19th", "July 20th", "July 21st", "July 22nd", "July 23rd", "July 24th", "July 25th", "July 26th", "July 27th", "July 28th", "July 29th", "July 30th", "July 31st" });
+            cmbHometownDay.Location = new Point(1090, 687);
+            cmbHometownDay.Margin = new Padding(4, 3, 4, 3);
+            cmbHometownDay.Name = "cmbHometownDay";
+            cmbHometownDay.RightToLeft = RightToLeft.No;
+            cmbHometownDay.Size = new Size(280, 40);
+            cmbHometownDay.TabIndex = 52;
+            // 
+            // txtHometownDay
+            // 
+            txtHometownDay.BackColor = SystemColors.Info;
+            txtHometownDay.Font = new Font("Consolas", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtHometownDay.Location = new Point(1090, 688);
+            txtHometownDay.Margin = new Padding(4, 3, 4, 3);
+            txtHometownDay.Name = "txtHometownDay";
+            txtHometownDay.Size = new Size(280, 39);
+            txtHometownDay.TabIndex = 53;
+            txtHometownDay.Text = "Not Set";
+            txtHometownDay.TextAlign = HorizontalAlignment.Center;
+            // 
             // MyTown
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.UI_BG_Settings;
             ClientSize = new Size(1918, 1080);
+            Controls.Add(txtHometownDay);
+            Controls.Add(cmbHometownDay);
+            Controls.Add(lblHometownDay);
             Controls.Add(chkBrianMp16);
             Controls.Add(lblSymbolHelp);
             Controls.Add(txtSymbols);
@@ -737,5 +783,8 @@
         private Label lblBirthday;
         private Label lblSymbolHelp;
         private CheckBox chkBrianMp16;
+        private Label lblHometownDay;
+        private ComboBox cmbHometownDay;
+        private TextBox txtHometownDay;
     }
 }

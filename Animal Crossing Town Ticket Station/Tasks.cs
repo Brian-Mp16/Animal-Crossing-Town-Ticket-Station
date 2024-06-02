@@ -73,6 +73,8 @@ namespace Animal_Crossing_Town_Ticket_Station
         bool boolBrianMp16VideosOff = false;
         int intWeatherYesterday = 0;
         Random rnd = new Random();
+        int intHometownDay = 0;
+        DateTime dteTortimerVacation;
 
         public Tasks()
         {
@@ -147,6 +149,8 @@ namespace Animal_Crossing_Town_Ticket_Station
                     intTasksAmount[i] = 0;
                     intTasksLast[i] = 0;
                 }
+                if (dteTortimerVacation.Month != now.Month || dteTortimerVacation.Year != now.Year)
+                    dteTortimerVacation = DateTime.MinValue;
                 SelectDailyTasks(now);
                 UpdateTasks();
                 intWeatherYesterday = intWeather;
@@ -229,6 +233,8 @@ namespace Animal_Crossing_Town_Ticket_Station
             boolBirthdaySet = data[39].ToLower() == "true" ? true : false;
             boolBrianMp16VideosOff = data[42].ToLower() == "true" ? true : false;
             intWeatherYesterday = data[44] != "" ? Convert.ToInt32(data[44]) : 0;
+            intHometownDay = data[45] != "" ? Convert.ToInt32(data[45]) : 0;
+            dteTortimerVacation = data[46] != "" ? Convert.ToDateTime(data[46]) : DateTime.MinValue;
 
             UpdateTasks();
         }
@@ -268,6 +274,7 @@ namespace Animal_Crossing_Town_Ticket_Station
             data[26] = intTimePlayedDays.ToString();
             data[27] = intTimePlayedSeconds.ToString();
             data[44] = intWeatherYesterday.ToString();
+            data[46] = dteTortimerVacation.ToString();
 
             File.WriteAllLines(filepath, SaveData.GetSaveData().Item1.Data);
         }
@@ -438,6 +445,8 @@ namespace Animal_Crossing_Town_Ticket_Station
                 case "Bug": intTasksComplete[intBugTaskIndex + 250]++; intBugTaskIndex = 0; break;
                 default: break;
             }
+            if (intTaskValue == 135) //Tortimer's Vacation
+                dteTortimerVacation = DateTime.Now + timeOffset;
 
             for (int i = 0; i < intTasksMax; i++)
             {
@@ -511,6 +520,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                     case 107: imgTask = Properties.Resources.TK_Icon_Hol_NookLottery; break;
                     case 108: imgTask = Properties.Resources.TK_Icon_Hol_Joan; break;
                     case 109: imgTask = Properties.Resources.TK_Icon_Hol_KKSlider; break;
+                    case 199: imgTask = Properties.Resources.TK_Icon_Lighthouse; break;
                     default: break;
                 }
 
@@ -558,6 +568,7 @@ namespace Animal_Crossing_Town_Ticket_Station
             CheckTortimerTime(now);
             if (intTasks[0] != 0 && intTasks[0] != 121 && intTasks[0] != 122) { CheckOtherTortimerTime(now); }//Meteor Shower and Founder's Day
             CheckHolidayTime(now); //Fishing Tourney Chip, //Halloween Jack, Thanksgiving Franklin, Sale Day Grab Bags, Christmas Jingle
+            CheckLightHouseTime(now);
             CheckLotteryTime(now);
             CheckMushroomTime(now);
             CheckSnowballTime(now);
@@ -628,6 +639,9 @@ namespace Animal_Crossing_Town_Ticket_Station
                     case "IslandFish": if (hasIsland == false || hasRod == false) { boolTaskChange = true; } break;
                     case "IslandBug": if (hasIsland == false || hasNet == false) { boolTaskChange = true; } break;
                     case "IslandHouse": case "IslandCoconut": case "IslandFlag": if (hasIsland == false) { boolTaskChange = true; } break;
+                    case "ShirtUmbrella": if (intWeather != 1) { boolTaskChange = true; } break;
+                    case "ShirtFan": if (CheckFanTime(now) == false) { boolTaskChange = true; } break;
+                    case "ShirtPinwheel": if (CheckPinwheelTime(now) == false) { boolTaskChange = true; } break;
                     case "NookBells":
                     case "NookCatalog":
                     case "NookShells":
@@ -795,6 +809,8 @@ namespace Animal_Crossing_Town_Ticket_Station
                     case 8: if (now.Day < 15 || now.Day > 21 || (int)now.DayOfWeek != WeekdayArray[0, 0] + WeekdayArray[0, 1] - 1) { boolPass = false; } break;
                     case 9: if (now.Day < 21 || now.Day > 28 || (int)now.DayOfWeek != WeekdayArray[0, 0] + WeekdayArray[0, 1] - 1) { boolPass = false; } break;
                     case 10: if (CheckMoonTime(now) == false) { boolPass = false; } break;
+                    case 11: if (now.Day != intHometownDay) { boolPass = false; } break;
+                    case 12: if (CheckTortimerVacationTime(now) == false) { boolPass = false; } break;
                     default: boolPass = false; break;
                 }
             }
@@ -993,6 +1009,13 @@ namespace Animal_Crossing_Town_Ticket_Station
             return boolMoonPass;
         }
 
+        private bool CheckTortimerVacationTime(DateTime now)
+        {
+            if (dteTortimerVacation == DateTime.MinValue && now.Day >= (18 - (now.Month * 3)) && now.Day < (28 - (now.Month * 3)))
+                return true;
+            return false;
+        }
+
         private bool CheckSaleDay(DateTime now)
         {
             if (now.Month == 11 && now.Day >= 23 && now.Day < 30 && (int)now.DayOfWeek == 5 && TaskCheckTimeNook(now, false, false, isFirstDay) == true)
@@ -1041,6 +1064,38 @@ namespace Animal_Crossing_Town_Ticket_Station
                 now.Month == 3 && now.Day == intAerobicsDay && now.Hour == 9 || now.Month == 3 && now.Day == intAerobicsDay && now.Hour == 10 && now.Minute < intAerobicsMinute ||
                 now.Month == 9 && now.Day == intAerobicsDay + 2 && now.Hour == 9 || now.Month == 9 && now.Day == intAerobicsDay + 2 && now.Hour == 10 && now.Minute < intAerobicsMinute)
                 return true;
+            return false;
+        }
+
+        private void CheckLightHouseTime(DateTime now)
+        {
+            if (dteTortimerVacation != DateTime.MinValue && now.Day <= dteTortimerVacation.Day + 7 && now.Hour < 21 ||
+                dteTortimerVacation != DateTime.MinValue && now.Day <= dteTortimerVacation.Day + 7 && now.Hour == 21 && now.Minute < 58)
+                intDailyTask = 199;
+            UpdateDailyTask();
+        }
+
+        private bool CheckFanTime(DateTime now)
+        {
+            if (intWeather == 0 && now.Month >= 4 && now.Month < 10 && now.Hour >= 7 && now.Hour < 17)
+                if (intTasksComplete[72] >= 3 || intBoughtList[1015] > 0 && TaskCheckTimeNook(now, true, false, isFirstDay) == true ||
+                    intBoughtList[1016] > 0 && TaskCheckTimeNook(now, true, false, isFirstDay) == true || intBoughtList[1017] > 0 && TaskCheckTimeNook(now, true, false, isFirstDay) == true ||
+                    intBoughtList[1018] > 0 && TaskCheckTimeNook(now, true, false, isFirstDay) == true || intBoughtList[1019] > 0 && TaskCheckTimeNook(now, true, false, isFirstDay) == true ||
+                    intBoughtList[1020] > 0 && TaskCheckTimeNook(now, true, false, isFirstDay) == true || intBoughtList[1021] > 0 && TaskCheckTimeNook(now, true, false, isFirstDay) == true ||
+                    intBoughtList[1022] > 0 && TaskCheckTimeNook(now, true, false, isFirstDay) == true)
+                    return true;
+            return false;
+        }
+
+        private bool CheckPinwheelTime(DateTime now)
+        {
+            if (intWeather == 2)
+                if (intTasksComplete[73] >= 3 || intBoughtList[1023] > 0 && TaskCheckTimeNook(now, true, false, isFirstDay) == true ||
+                    intBoughtList[1024] > 0 && TaskCheckTimeNook(now, true, false, isFirstDay) == true || intBoughtList[1025] > 0 && TaskCheckTimeNook(now, true, false, isFirstDay) == true ||
+                    intBoughtList[1026] > 0 && TaskCheckTimeNook(now, true, false, isFirstDay) == true || intBoughtList[1027] > 0 && TaskCheckTimeNook(now, true, false, isFirstDay) == true ||
+                    intBoughtList[1028] > 0 && TaskCheckTimeNook(now, true, false, isFirstDay) == true || intBoughtList[1029] > 0 && TaskCheckTimeNook(now, true, false, isFirstDay) == true ||
+                    intBoughtList[1030] > 0 && TaskCheckTimeNook(now, true, false, isFirstDay) == true)
+                    return true;
             return false;
         }
 
@@ -1156,6 +1211,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                     case 107: intQuantity = 1; intTickets = 450; break;
                     case 108: intQuantity = 1; intTickets = 300; break;
                     case 109: intQuantity = 1; intTickets = 500; break;
+                    case 199: intQuantity = 1; intTickets = 250; break;
                     default: break;
                 }
 
@@ -1184,7 +1240,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                 lblTaskDescription.Text = "Visit Tortimer " + tortCodeData.Item1.Article + tortCodeData.Item1.Name;
 
 
-            if (intTasks[intTask] >= 90 && intTasks[intTask] < 110)
+            if (intTasks[intTask] >= 90 && intTasks[intTask] < 110 || intTasks[intTask] == 199)
             {
                 switch (intTasks[intTask])
                 {
@@ -1197,7 +1253,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                     case 96: lblTaskDescription.Text = "Get 5 Raffle Tickets from Nook's"; break;
                     case 97: lblTaskDescription.Text = "Dig up 2 Gyroids"; break;
                     case 98: lblTaskDescription.Text = "Admire a Rainbow over a Waterfall"; break;
-                    case 99: lblTaskDescription.Text = String.Format("Happy Birthday, {0}! Enjoy some free Tickets!", strPlayerName); break;
+                    case 99: lblTaskDescription.Text = String.Format("Happy Birthday, {0}! Enjoy these free Tickets!", strPlayerName); break;
                     case 100: lblTaskDescription.Text = "Give a Fish to Chip at the Fishing Tourney today"; break;
                     case 101: lblTaskDescription.Text = "Get 3 Items from Jack tonight"; break;
                     case 102: lblTaskDescription.Text = "Get 3 Harvest Items from Franklin today"; break;
@@ -1208,6 +1264,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                     case 107: lblTaskDescription.Text = "Win an Item from Nook's Raffle today"; break;
                     case 108: lblTaskDescription.Text = "Buy some Turnips from Joan today"; break;
                     case 109: lblTaskDescription.Text = "Listen to a K.K. Slider Concert tonight"; break;
+                    case 199: lblTaskDescription.Text = "Turn on the Lighthouse tonight"; break;
                     default: break;
                 }
             }
@@ -1273,6 +1330,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                     case 107: if (intTasksAmount[intTask] >= 1) { TaskComplete(intTask, "", 107, 450); } else { intTasksAmount[intTask]++; UpdateTasks(); } break;
                     case 108: if (intTasksAmount[intTask] >= 1) { TaskComplete(intTask, "", 108, 300); } else { intTasksAmount[intTask]++; UpdateTasks(); } break;
                     case 109: if (intTasksAmount[intTask] >= 1) { TaskComplete(intTask, "", 109, 500); } else { intTasksAmount[intTask]++; UpdateTasks(); } break;
+                    case 199: if (intTasksAmount[intTask] >= 1) { TaskComplete(intTask, "", 199, 250); } else { intTasksAmount[intTask]++; UpdateTasks(); } break;
                     default: break;
                 }
             }

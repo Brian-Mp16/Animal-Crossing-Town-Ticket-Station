@@ -199,8 +199,9 @@ namespace Animal_Crossing_Town_Ticket_Station
                 Tuple<TortInfo, int> tortCodeData = TortData.GetTortCheckByIndex(i);
                 imgList.Images.Add(tortCodeData.Item1.ImageName);
             }
-            for (int i = TortData.GetTortInfoArrayLength() + 110; i < 200; i++)
+            for (int i = TortData.GetTortInfoArrayLength() + 110; i < 199; i++)
                 imgList.Images.Add(Properties.Resources.IC_Furniture_PG_Sprite_Upscaled);
+            imgList.Images.Add(Properties.Resources.TK_Icon_Lighthouse);
             for (int i = 1; i < FishData.GetFishInfoArrayLength() + 1; i++)
             {
                 Tuple<FishInfo, int> fishCodeData = FishData.GetFishCheckByIndex(i);
@@ -393,6 +394,8 @@ namespace Animal_Crossing_Town_Ticket_Station
             for (int i = 110; i < TortData.GetTortInfoArrayLength() + 110; i++)
                 if (intFilterList == 0 || intTasksComplete[i] > 0 && intFilterList == 1 || intTasksComplete[i] <= 0 && intFilterList == 2)
                     lstAchievements.Items.Add(" Visit Tortimer for " + TortData.GetTortCheckByIndex(i).Item1.Name + ":", i).SubItems.Add(intTasksComplete[i] + " ");
+            if (intFilterList == 0 || intTasksComplete[199] > 0 && intFilterList == 1 || intTasksComplete[199] <= 0 && intFilterList == 2)
+                lstAchievements.Items.Add(" Turn on the Lighthouse:", 199).SubItems.Add(intTasksComplete[199] + " ");
             for (int i = 201; i < FishData.GetFishInfoArrayLength() + 201; i++)
                 if (intFilterList == 0 || intTasksComplete[i] > 0 && intFilterList == 1 || intTasksComplete[i] <= 0 && intFilterList == 2)
                     lstAchievements.Items.Add(" " + FishData.GetFishCheckByIndex(i - 200).Item1.Name + ":", i - 1).SubItems.Add(intTasksComplete[i] + " ");

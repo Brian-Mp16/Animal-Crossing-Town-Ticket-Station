@@ -44,6 +44,7 @@ namespace Animal_Crossing_Town_Ticket_Station
         string strTownTemp = "Not Set";
         int intTimePlayedSeconds = 0;
         bool boolBrianMp16VideosOff = false;
+        int intHometownDay = 0;
 
         public MyTown()
         {
@@ -91,6 +92,7 @@ namespace Animal_Crossing_Town_Ticket_Station
             lblPlayerName.Font = fontFink20;
             lblTownName.Font = fontFink20;
             lblBirthday.Font = fontFink20;
+            lblHometownDay.Font = fontFink20;
             lblSymbolHelp.Font = fontFink18;
         }
 
@@ -181,15 +183,29 @@ namespace Animal_Crossing_Town_Ticket_Station
             else
                 txtBirthday.Text = String.Format("{0} {1}", birthday.ToString("MMMM"), AddOrdinal(birthday.Day));
 
+            if (intHometownDay < 4)
+                cmbHometownDay.SelectedIndex = intHometownDay - 1;
+            else
+                cmbHometownDay.SelectedIndex = intHometownDay - 2;
+
+            if (intHometownDay == 0)
+                txtHometownDay.Text = "Not Set";
+            else
+                txtHometownDay.Text = cmbHometownDay.Text;
+
             lblBirthday.Visible = true;
             lblPlayerName.Visible = true;
             lblTownName.Visible = true;
+            lblHometownDay.Visible = true;
             txtBirthday.Visible = true;
             txtPlayerName.Visible = true;
             txtTownName.Visible = true;
+            cmbHometownDay.Visible = false;
+            txtHometownDay.Visible = true;
             txtPlayerName.Enabled = false;
             txtTownName.Enabled = false;
             txtBirthday.Enabled = false;
+            txtHometownDay.Enabled = false;
 
             if (boolChangeName == false)
             {
@@ -201,6 +217,8 @@ namespace Animal_Crossing_Town_Ticket_Station
                 txtTownName.BorderStyle = BorderStyle.None;
                 txtBirthday.BackColor = Color.FromArgb(255, 147, 194, 255);
                 txtBirthday.BorderStyle = BorderStyle.None;
+                txtHometownDay.BackColor = Color.FromArgb(255, 147, 194, 255);
+                txtHometownDay.BorderStyle = BorderStyle.None;
             }
             else
             {
@@ -212,6 +230,8 @@ namespace Animal_Crossing_Town_Ticket_Station
                 txtTownName.BorderStyle = BorderStyle.Fixed3D;
                 txtBirthday.BackColor = Color.Gainsboro;
                 txtBirthday.BorderStyle = BorderStyle.Fixed3D;
+                txtHometownDay.Visible = false;
+                cmbHometownDay.Visible = true;
             }
         }
 
@@ -237,6 +257,7 @@ namespace Animal_Crossing_Town_Ticket_Station
             data[28] = birthday.ToString();
             data[39] = boolBirthdaySet == true ? "true" : "false";
             data[42] = boolBrianMp16VideosOff == true ? "true" : "false";
+            data[45] = intHometownDay.ToString();
             switch (intNookStore)
             {
                 case 1: data[11] = "1"; break;
@@ -267,6 +288,7 @@ namespace Animal_Crossing_Town_Ticket_Station
             birthday = data[28] != "" ? Convert.ToDateTime(data[28]) : DateTime.Now;
             boolBirthdaySet = data[39] == "true" ? true : false;
             boolBrianMp16VideosOff = data[42].ToLower() == "true" ? true : false;
+            intHometownDay = data[45] != "" ? Convert.ToInt32(data[45]) : 0;
             switch (data[11])
             {
                 case "1": intNookStore = 1; break;
@@ -284,8 +306,6 @@ namespace Animal_Crossing_Town_Ticket_Station
 
             intTimePlayedSeconds++;
             UpdateClockImages();
-
-
         }
 
         private void UpdateClockImages()
@@ -572,9 +592,11 @@ namespace Animal_Crossing_Town_Ticket_Station
             lblBirthday.Visible = false;
             lblPlayerName.Visible = false;
             lblTownName.Visible = false;
+            lblHometownDay.Visible = false;
             txtBirthday.Visible = false;
             txtPlayerName.Visible = false;
             txtTownName.Visible = false;
+            txtHometownDay.Visible = false;
         }
 
         private void btnChangeTimeAccept_Click(object sender, EventArgs e)
@@ -594,6 +616,10 @@ namespace Animal_Crossing_Town_Ticket_Station
                 CheckIfNamesAreValid();
                 strPlayerName = txtPlayerName.Text;
                 strTownName = txtTownName.Text;
+                if (cmbHometownDay.SelectedIndex < 3)
+                    intHometownDay = cmbHometownDay.SelectedIndex + 1;
+                else
+                    intHometownDay = cmbHometownDay.SelectedIndex + 2;
             }
 
             boolChangeName = false;
@@ -675,6 +701,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                     hasIsland = false;
                     hasEreader = false;
                     intNookStore = 1;
+                    intHometownDay = 0;
                     chkHaveShovel.Checked = false;
                     chkHaveNet.Checked = false;
                     chkHaveRod.Checked = false;
