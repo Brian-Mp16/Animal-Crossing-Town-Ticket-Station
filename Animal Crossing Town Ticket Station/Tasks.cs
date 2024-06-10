@@ -72,7 +72,7 @@ namespace Animal_Crossing_Town_Ticket_Station
         DateTime birthday;
         bool boolBrianMp16VideosOff = false;
         int intWeatherYesterday = 0;
-        Random rnd = new Random();
+        Random rnd = new Random(Guid.NewGuid().GetHashCode());
         int intHometownDay = 0;
         DateTime dteTortimerVacation;
 
@@ -130,6 +130,7 @@ namespace Animal_Crossing_Town_Ticket_Station
             GC.Collect();
 
             intTimePlayedSeconds++;
+            //rnd.Next();
             DateTime now = DateTime.Now + timeOffset;
 
             if (loadTimeTasks.Day != now.Day && now.Hour > 5 || loadTimeTasks.Day != now.Day && now.Hour < 6 && loadTimeTasks.Hour < 6 ||
@@ -727,14 +728,13 @@ namespace Animal_Crossing_Town_Ticket_Station
         {
             while (true)
             {
-                int rng = rnd.Next(1, 41);
-                Tuple<FishInfo, int> fishCodeData = FishData.GetFishCheckByIndex(rng);
+                Tuple<FishInfo, int> fishCodeData = FishData.GetFishCheckByIndex(rnd.Next(1, 41));
                 try
                 {
                     if (IsWithinTime(fishCodeData.Item1.MonthArray, fishCodeData.Item1.HourArray, null, fishCodeData.Item1.WeatherArray, now) == true)
                         return fishCodeData;
                 }
-                catch (Exception e) { MessageBox.Show(e.Message + " " + rng); }
+                catch (Exception e) { MessageBox.Show(e.Message); }
             }
 
         }
@@ -1306,7 +1306,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                     UpdateTasks();
                 }
             }
-            if (intTasks[intTask] >= 90 && intTasks[intTask] < 110)
+            if (intTasks[intTask] >= 90 && intTasks[intTask] < 110 || intTasks[intTask] >= 199 && intTasks[intTask] < 200)
             {
                 switch (intTasks[intTask])
                 {

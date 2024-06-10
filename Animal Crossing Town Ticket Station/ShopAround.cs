@@ -1624,7 +1624,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                     case 3: intUnlockAmount = 20; intUnlockHave = intBoughtUnique[12]; strUnlockText = "20 unique Crazy Redd Item Codes"; break;
                     case 4: intUnlockAmount = 10; intUnlockHave = intBoughtUnique[13]; strUnlockText = "10 unique Raffle Item Codes"; break;
                     case 5: intUnlockAmount = 10; intUnlockHave = intBoughtUnique[14]; strUnlockText = "10 unique Gulliver Item Codes"; break;
-                    case 6: intUnlockAmount = 30; intUnlockHave = intBoughtUnique[6]; strUnlockText = "20 unique Gyroid Codes"; break;
+                    case 6: intUnlockAmount = 20; intUnlockHave = intBoughtUnique[6]; strUnlockText = "20 unique Gyroid Codes"; break;
                     case 7: intUnlockAmount = 50; intUnlockHave = intBoughtUnique[3]; strUnlockText = "50 unique Clothing Codes"; break;
                     case 8: intUnlockAmount = 20; intUnlockHave = intBoughtUnique[1]; strUnlockText = "20 unique Carpet Codes"; break;
                     case 9: intUnlockAmount = 20; intUnlockHave = intBoughtUnique[2]; strUnlockText = "20 unique Wallpaper Codes"; break;
