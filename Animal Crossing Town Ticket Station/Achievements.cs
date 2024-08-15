@@ -61,9 +61,10 @@ namespace Animal_Crossing_Town_Ticket_Station
             AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.FinkHeavy_Regular.Length, IntPtr.Zero, ref dummy);
             System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr);
 
-            fontFink14 = new Font(fonts.Families[0], 14.0F);
-            fontFink21 = new Font(fonts.Families[0], 21.0F);
-            fontFink24 = new Font(fonts.Families[0], 24.0F);
+            float dx = this.CreateGraphics().DpiX;
+            fontFink14 = new Font(fonts.Families[0], 14.0F * 96.0F / dx);
+            fontFink21 = new Font(fonts.Families[0], 21.0F * 96.0F / dx);
+            fontFink24 = new Font(fonts.Families[0], 24.0F * 96.0F / dx);
 
             btnBack.Font = fontFink24;
             lstAchievements.Font = fontFink21;
