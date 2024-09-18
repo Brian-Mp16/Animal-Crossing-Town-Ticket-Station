@@ -13,7 +13,7 @@ You may need to install .NET 6.0 on your computer to run this program .NET 6.0 D
 https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 
 Animal Crossing Town Tickets download link:
-https://mega.nz/file/XKx1UaIb#malxW5U9UAKmu2mupMHDnvqASSlmlRQKPaUlXPfXezI
+https://mega.nz/file/iS5yiR5C#ByRJMsd1b-2sUo-SPKKrRnuF8nXJt02E3ZmspjxwX1w
 
 Please report any bugs/crashes to BrianMp16's Discord #animal-crossing:
 https://discord.gg/2F8javw
