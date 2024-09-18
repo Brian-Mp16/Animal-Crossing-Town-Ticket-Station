@@ -1304,7 +1304,7 @@ new ItemInfo("Rockin' K.K.", 0x2A1B, 1290, 1054, 497, 0, 0, 0, 10, "Music", "Com
 new ItemInfo("K.K. Ragtime", 0x2A1C, 1291, 593, 498, 0, 0, 0, 10, "Music", "Common", "None", 500, ACPassword.CodeType.Magazine, "WUcucDDDDDDDDDDDDDDDDDDDDDDD", Properties.Resources.ST_Aircheck_PG_Sprite),
 new ItemInfo("K.K. Gumbo", 0x2A1D, 1292, 585, 499, 0, 0, 0, 10, "Music", "Common", "None", 500, ACPassword.CodeType.Magazine, "wRxGqppppppppppppppppppppppp", Properties.Resources.ST_Aircheck_PG_Sprite),
 new ItemInfo("The K. Funk", 0x2A1E, 1293, 1265, 500, 0, 0, 0, 10, "Music", "Common", "None", 500, ACPassword.CodeType.Magazine, "BCdEGTmmmmmmmmmmmmmmmmmmmmmm", Properties.Resources.ST_Aircheck_PG_Sprite),
-new ItemInfo("K.K. Blues", 0x2A1F, 1294, 571, 501, 0, 0, 0, 10, "Music", "Common", "None", 500, ACPassword.CodeType.Magazine, "aaqq4esasxxBBu LLxaKSwcevVILk", Properties.Resources.ST_Aircheck_PG_Sprite),
+new ItemInfo("K.K. Blues", 0x2A1F, 1294, 571, 501, 0, 0, 0, 10, "Music", "Common", "None", 500, ACPassword.CodeType.Magazine, "", Properties.Resources.ST_Aircheck_PG_Sprite),
 new ItemInfo("Soulful K.K.", 0x2A20, 1295, 1134, 502, 0, 0, 0, 10, "Music", "Common", "None", 500, ACPassword.CodeType.Magazine, "WWeRdTTttttttttttttttttttttt", Properties.Resources.ST_Aircheck_PG_Sprite),
 new ItemInfo("K.K. Soul", 0x2A21, 1296, 601, 503, 0, 0, 0, 10, "Music", "Common", "None", 500, ACPassword.CodeType.Magazine, "nnOOGsmmmmmmmmmmmmmmmmmmmmmm", Properties.Resources.ST_Aircheck_PG_Sprite),
 new ItemInfo("K.K. Cruisin'", 0x2A22, 1297, 578, 504, 0, 0, 0, 10, "Music", "Common", "None", 500, ACPassword.CodeType.Magazine, "2bbbMONnnnnnnnnnnnnnnnnnnnnn", Properties.Resources.ST_Aircheck_PG_Sprite),
