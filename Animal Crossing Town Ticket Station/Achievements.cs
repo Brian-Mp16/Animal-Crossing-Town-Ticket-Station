@@ -247,7 +247,7 @@ namespace Animal_Crossing_Town_Ticket_Station
             TimeSpan t = TimeSpan.FromSeconds(intTimePlayedSeconds);
             int intTasksUnique = 0;
             for (int i = 0; i < intTasksTotal; i++)
-                if (intTasksComplete[i] > 0)
+                if (intTasksComplete[i] > 0 && i != 89)
                     intTasksUnique++;
             int intItemCodesUnique = 0;
             for (int i = 0; i < intBoughtUniqueCategory - 8; i++)
