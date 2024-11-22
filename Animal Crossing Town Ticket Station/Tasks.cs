@@ -808,7 +808,7 @@ namespace Animal_Crossing_Town_Ticket_Station
                     case 6: if (now.Day > 7 || (int)now.DayOfWeek != WeekdayArray[0, 0] + WeekdayArray[0, 1] - 1) { boolPass = false; } break;
                     case 7: if (now.Day < 8 || now.Day > 14 || (int)now.DayOfWeek != WeekdayArray[0, 0] + WeekdayArray[0, 1] - 1) { boolPass = false; } break;
                     case 8: if (now.Day < 15 || now.Day > 21 || (int)now.DayOfWeek != WeekdayArray[0, 0] + WeekdayArray[0, 1] - 1) { boolPass = false; } break;
-                    case 9: if (now.Day < 21 || now.Day > 28 || (int)now.DayOfWeek != WeekdayArray[0, 0] + WeekdayArray[0, 1] - 1) { boolPass = false; } break;
+                    case 9: if (now.Day < 23 || now.Day > 29 || (int)now.DayOfWeek != WeekdayArray[0, 0] + WeekdayArray[0, 1] - 1) { boolPass = false; } break;
                     case 10: if (CheckMoonTime(now) == false) { boolPass = false; } break;
                     case 11: if (now.Day != intHometownDay) { boolPass = false; } break;
                     case 12: if (CheckTortimerVacationTime(now) == false) { boolPass = false; } break;
